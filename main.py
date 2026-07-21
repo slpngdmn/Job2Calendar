@@ -5,7 +5,7 @@ import sys
 import api
 from filter import filter_matching_jobs
 import storage
-import calendar
+import calendar_manager  # <-- Updated import
 
 # Configure logging for the application
 logging.basicConfig(
@@ -35,8 +35,8 @@ def main() -> None:
     matching_jobs = filter_matching_jobs(all_jobs, keywords)
     logger.info(f"Found {len(matching_jobs)} jobs matching the target keywords.")
     
-    # 3. Load existing calendar
-    cal_obj = calendar.load_calendar()
+    # 3. Load existing calendar using the renamed module
+    cal_obj = calendar_manager.load_calendar()
     
     # 4. Process Matching Jobs
     new_processed_count = 0
@@ -56,7 +56,7 @@ def main() -> None:
         logger.info(f"Processing new matching job: {job.get('job_title')} (ID: {job_primary_id})")
         
         # Attempt to create the event in the ICS calendar
-        success = calendar.create_job_event(job, cal_obj)
+        success = calendar_manager.create_job_event(job, cal_obj)
         
         if success:
             processed_jobs.add(job_primary_id)
@@ -64,9 +64,9 @@ def main() -> None:
         else:
             logger.error(f"Failed to process job {job_primary_id}. Will retry on next run.")
             
-        # 5. Save State
+    # 5. Save State
     if new_processed_count > 0:
-        calendar.save_calendar(cal_obj)
+        calendar_manager.save_calendar(cal_obj)
         storage.save_processed_jobs("processed_jobs.json", processed_jobs)
         logger.info(f"Successfully added {new_processed_count} new jobs to the calendar.")
     else:
