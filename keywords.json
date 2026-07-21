@@ -1,0 +1,15 @@
+{
+    "include": [
+        "(?i)office.*assistant",
+        "(?i)office.*support",
+        "(?i)field.*assistant",
+        "(?i)data.*entry",
+        "(?i)upper.*division"
+    ],
+
+    "exclude": [
+        "(?i)senior",
+        "(?i)chief",
+        "(?i)director"
+    ]
+}

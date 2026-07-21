@@ -1,0 +1,5 @@
+# HTTP client for interacting with the Teletalk API
+requests>=2.31.0
+
+# Library to create and modify standard iCalendar (.ics) files
+ics>=0.7.2
