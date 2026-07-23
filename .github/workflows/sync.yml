@@ -42,7 +42,7 @@ jobs:
           touch jobs.ics
           
           # Add the database file (in data/) and the calendar feed file (in root)
-          git add data/processed_jobs.json jobs.ics || true
+          git add processed_jobs.json jobs.ics || true
           
           # Check if there are any staged changes
           if git diff --staged --quiet; then
