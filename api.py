@@ -1,12 +1,15 @@
 import logging
+import json
+import socket
 import time
 from typing import Any, Dict, List
-import requests
+from urllib import error as url_error
+from urllib import request as url_request
 
 logger = logging.getLogger(__name__)
 
 # Configurable constants for the API
-BASE_API_URL = "https://alljobs.teletalk.com.bd/api/v1/published-jobs/search"
+BASE_API_URL = "https://alljobs.teletalk.com.bd/api/v1/govt-jobs/org-list?page=1&limit=20"
 DEFAULT_LIMIT = 100
 DEFAULT_ORG = 1
 MAX_RETRIES = 3
@@ -97,16 +100,16 @@ def _make_request_with_retry(url: str) -> Any:
     
     for attempt in range(1, MAX_RETRIES + 1):
         try:
-            response = requests.get(url, headers=headers, timeout=15)
-            response.raise_for_status() 
-            return response.json()
+            http_request = url_request.Request(url, headers=headers, method="GET")
+            with url_request.urlopen(http_request, timeout=15) as response:
+                return json.loads(response.read().decode("utf-8"))
             
-        except requests.exceptions.HTTPError as e:
+        except url_error.HTTPError as e:
             logger.error(f"HTTP error on attempt {attempt}/{MAX_RETRIES} for {url}: {e}")
-        except requests.exceptions.ConnectionError as e:
-            logger.error(f"Connection error on attempt {attempt}/{MAX_RETRIES} for {url}: {e}")
-        except requests.exceptions.Timeout as e:
+        except socket.timeout as e:
             logger.error(f"Timeout on attempt {attempt}/{MAX_RETRIES} for {url}: {e}")
+        except url_error.URLError as e:
+            logger.error(f"Connection error on attempt {attempt}/{MAX_RETRIES} for {url}: {e}")
         except ValueError as e:
             logger.error(f"Failed to parse JSON response from {url}: {e}")
         except Exception as e:
