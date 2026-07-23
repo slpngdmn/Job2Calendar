@@ -1,6 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
+CALSCALE:GEORGIAN
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260720
 DESCRIPTION:Organization: Bangladesh Rural Development Board (BRDB)\nPublished: 2026-07-20\nDeadline: 2026-07-20\nApplication URL:\nhttp://www.brdb.gov.bd/\n\nJob Primary ID: 14274
@@ -24,6 +25,12 @@ DTSTART;VALUE=DATE:20260720
 DESCRIPTION:Organization: Bangladesh Rural Development Board (BRDB)\nPublished: 2026-07-20\nDeadline: 2026-07-20\nApplication URL:\nhttp://www.brdb.gov.bd/\n\nJob Primary ID: 14286
 SUMMARY:Data Entry Operator (Vacancy: N/A)
 UID:teletalk-job-14286@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260725
+DESCRIPTION:Organization: পল্লী উন্নয়ন ও সমবায় বিভাগ\nPublished: 2026-06-25\nDeadline: 2026-07-25\nApplication URL:\nhttps://rdarangpur.teletalk.com.bd/\n\nJob Primary ID: 14069
+SUMMARY:Office Assistant (Vacancy: 10)
+UID:teletalk-job-14069@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260702
@@ -56,10 +63,10 @@ SUMMARY:Office Support Staff (Vacancy: N/A)
 UID:teletalk-job-14268@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260720
-DESCRIPTION:Organization: কারিগরি শিক্ষা অধিদপ্তর\nPublished: 2026-07-20\nDeadline: 2026-07-20\nApplication URL:\nhttps://techedu.gov.bd/\n\nJob Primary ID: 14300
-SUMMARY:Office Assistant Cum Store Keeper (Vacancy: N/A)
-UID:teletalk-job-14300@job2calendar
+DTSTART;VALUE=DATE:20260714
+DESCRIPTION:Organization: Department of Architecture ( ARCHITECTURE)\nPublished: 2026-07-14\nDeadline: 2026-07-14\nApplication URL:\nhttp://www.architecture.gov.bd/\n\nJob Primary ID: 14260
+SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: N/A)
+UID:teletalk-job-14260@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260720
@@ -68,10 +75,16 @@ SUMMARY:Office Support Staff (Vacancy: N/A)
 UID:teletalk-job-14289@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260714
-DESCRIPTION:Organization: Department of Architecture ( ARCHITECTURE)\nPublished: 2026-07-14\nDeadline: 2026-07-14\nApplication URL:\nhttp://www.architecture.gov.bd/\n\nJob Primary ID: 14260
-SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: N/A)
-UID:teletalk-job-14260@job2calendar
+DTSTART;VALUE=DATE:20260720
+DESCRIPTION:Organization: কারিগরি শিক্ষা অধিদপ্তর\nPublished: 2026-07-20\nDeadline: 2026-07-20\nApplication URL:\nhttps://techedu.gov.bd/\n\nJob Primary ID: 14300
+SUMMARY:Office Assistant Cum Store Keeper (Vacancy: N/A)
+UID:teletalk-job-14300@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260708
+DESCRIPTION:Organization: পল্লী উন্নয়ন একাডেমি জামালপুর\nPublished: 2026-07-08\nDeadline: 2026-07-08\nApplication URL:\nhttps://www.rda.jamalpur.gov.bd/\n\nJob Primary ID: 14230
+SUMMARY:Office Assistant (Vacancy: N/A)
+UID:teletalk-job-14230@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260720
@@ -80,10 +93,10 @@ SUMMARY:Office Assistant-Cum-Computer Operator (Vacancy: N/A)
 UID:teletalk-job-14285@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260708
-DESCRIPTION:Organization: পল্লী উন্নয়ন একাডেমি জামালপুর\nPublished: 2026-07-08\nDeadline: 2026-07-08\nApplication URL:\nhttps://www.rda.jamalpur.gov.bd/\n\nJob Primary ID: 14230
-SUMMARY:Office Assistant (Vacancy: N/A)
-UID:teletalk-job-14230@job2calendar
+DTSTART;VALUE=DATE:20260730
+DESCRIPTION:Organization: বাংলাদেশ রপ্তানি প্রক্রিয়াকরণ এলাকা কর্তৃপক্ষ\nPublished: 2026-07-01\nDeadline: 2026-07-30\nApplication URL:\nhttps://bepza.teletalk.com.bd/\n\nJob Primary ID: 14098
+SUMMARY:Office Assistant-Cum- Computer Operator (Vacancy: 07)
+UID:teletalk-job-14098@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260720
@@ -104,22 +117,16 @@ SUMMARY:Office Assistant Cum Data Entry/Control Operator (Vacancy: N/A)
 UID:teletalk-job-14303@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260714
-DESCRIPTION:Organization: Department of Architecture ( ARCHITECTURE)\nPublished: 2026-07-14\nDeadline: 2026-07-14\nApplication URL:\nhttp://www.architecture.gov.bd/\n\nJob Primary ID: 14263
-SUMMARY:Office Support Staff (Vacancy: N/A)
-UID:teletalk-job-14263@job2calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260707
 DESCRIPTION:Organization: Rural Development and Co-operative Division(RDCD)\nPublished: 2026-07-07\nDeadline: 2026-07-07\nApplication URL:\nhttp://www.rdcd.gov.bd/\n\nJob Primary ID: 14197
 SUMMARY:Office Support Staff (Vacancy: N/A)
 UID:teletalk-job-14197@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260708
-DESCRIPTION:Organization: DC Office Rajshahi (DCRAJSHAHI)\nPublished: 2026-07-08\nDeadline: 2026-07-08\nApplication URL:\nhttp://www.rajshahi.gov.bd/\n\nJob Primary ID: 14233
+DTSTART;VALUE=DATE:20260714
+DESCRIPTION:Organization: Department of Architecture ( ARCHITECTURE)\nPublished: 2026-07-14\nDeadline: 2026-07-14\nApplication URL:\nhttp://www.architecture.gov.bd/\n\nJob Primary ID: 14263
 SUMMARY:Office Support Staff (Vacancy: N/A)
-UID:teletalk-job-14233@job2calendar
+UID:teletalk-job-14263@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260630
@@ -128,16 +135,22 @@ SUMMARY:Office Assistant-cum-Computer Typist (Vacancy: N/A)
 UID:teletalk-job-14167@job2calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260708
+DESCRIPTION:Organization: DC Office Rajshahi (DCRAJSHAHI)\nPublished: 2026-07-08\nDeadline: 2026-07-08\nApplication URL:\nhttp://www.rajshahi.gov.bd/\n\nJob Primary ID: 14233
+SUMMARY:Office Support Staff (Vacancy: N/A)
+UID:teletalk-job-14233@job2calendar
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260722
 DESCRIPTION:Organization: Department of Archaeology (DOA)\nPublished: 2026-07-22\nDeadline: 2026-07-22\nApplication URL:\nhttp://www.archaeology.gov.bd/\n\nJob Primary ID: 14350
 SUMMARY:Office Support Staff (Vacancy: N/A)
 UID:teletalk-job-14350@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260713
-DESCRIPTION:Organization: Eastern Refinery Limited(ERLB)\nPublished: 2026-07-13\nDeadline: 2026-07-13\nApplication URL:\nhttp://www.erl.com.bd/\n\nJob Primary ID: 14254
-SUMMARY:Office Support Staff (Vacancy: N/A)
-UID:teletalk-job-14254@job2calendar
+DTSTART;VALUE=DATE:20260730
+DESCRIPTION:Organization: রাষ্ট্রপতির কার্যালয়\nPublished: 2026-06-21\nDeadline: 2026-07-30\nApplication URL:\nhttps://bbp.teletalk.com.bd/\n\nJob Primary ID: 13968
+SUMMARY:Office Support Staff (Vacancy: 14)
+UID:teletalk-job-13968@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260708
@@ -146,22 +159,28 @@ SUMMARY:Office Assistant-cum Computer Typist (Vacancy: N/A)
 UID:teletalk-job-14228@job2calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260713
+DESCRIPTION:Organization: Eastern Refinery Limited(ERLB)\nPublished: 2026-07-13\nDeadline: 2026-07-13\nApplication URL:\nhttp://www.erl.com.bd/\n\nJob Primary ID: 14254
+SUMMARY:Office Support Staff (Vacancy: N/A)
+UID:teletalk-job-14254@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260725
+DESCRIPTION:Organization: পল্লী উন্নয়ন ও সমবায় বিভাগ\nPublished: 2026-06-25\nDeadline: 2026-07-25\nApplication URL:\nhttps://rdarangpur.teletalk.com.bd/\n\nJob Primary ID: 14067
+SUMMARY:Office Assistant cum-Computer Typist (Vacancy: 05)
+UID:teletalk-job-14067@job2calendar
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260708
 DESCRIPTION:Organization: পল্লী উন্নয়ন একাডেমি জামালপুর\nPublished: 2026-07-08\nDeadline: 2026-07-08\nApplication URL:\nhttps://www.rda.jamalpur.gov.bd/\n\nJob Primary ID: 14224
 SUMMARY:Field Assistant (Vacancy: N/A)
 UID:teletalk-job-14224@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260720
-DESCRIPTION:Organization: কারিগরি শিক্ষা অধিদপ্তর\nPublished: 2026-07-20\nDeadline: 2026-07-20\nApplication URL:\nhttps://techedu.gov.bd/\n\nJob Primary ID: 14302
-SUMMARY:Office Assistant Cum Typist (Vacancy: N/A)
-UID:teletalk-job-14302@job2calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260707
-DESCRIPTION:Organization: Rural Development and Co-operative Division(RDCD)\nPublished: 2026-07-07\nDeadline: 2026-07-07\nApplication URL:\nhttp://www.rdcd.gov.bd/\n\nJob Primary ID: 14196
-SUMMARY:Office Assistant cum Computer Typist (Vacancy: N/A)
-UID:teletalk-job-14196@job2calendar
+DTSTART;VALUE=DATE:20260725
+DESCRIPTION:Organization: পল্লী উন্নয়ন ও সমবায় বিভাগ\nPublished: 2026-06-25\nDeadline: 2026-07-25\nApplication URL:\nhttps://rdarangpur.teletalk.com.bd/\n\nJob Primary ID: 14063
+SUMMARY:Field Assistant (Vacancy: 02)
+UID:teletalk-job-14063@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260629
@@ -171,9 +190,27 @@ UID:teletalk-job-14115@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260707
+DESCRIPTION:Organization: Rural Development and Co-operative Division(RDCD)\nPublished: 2026-07-07\nDeadline: 2026-07-07\nApplication URL:\nhttp://www.rdcd.gov.bd/\n\nJob Primary ID: 14196
+SUMMARY:Office Assistant cum Computer Typist (Vacancy: N/A)
+UID:teletalk-job-14196@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260720
+DESCRIPTION:Organization: কারিগরি শিক্ষা অধিদপ্তর\nPublished: 2026-07-20\nDeadline: 2026-07-20\nApplication URL:\nhttps://techedu.gov.bd/\n\nJob Primary ID: 14302
+SUMMARY:Office Assistant Cum Typist (Vacancy: N/A)
+UID:teletalk-job-14302@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260707
 DESCRIPTION:Organization: Department of Women Affairs ( DWA )\nPublished: 2026-07-07\nDeadline: 2026-07-07\nApplication URL:\nhttp://www.dwa.gov.bd/\n\nJob Primary ID: 14202
 SUMMARY:Office Assistant Cum Computer Typist (Vacancy: N/A)
 UID:teletalk-job-14202@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260730
+DESCRIPTION:Organization: রাষ্ট্রপতির কার্যালয়\nPublished: 2026-06-21\nDeadline: 2026-07-30\nApplication URL:\nhttps://bbp.teletalk.com.bd/\n\nJob Primary ID: 13967
+SUMMARY:Office Assistant Cum Computer Typist (Vacancy: 05)
+UID:teletalk-job-13967@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260720
