@@ -47,28 +47,21 @@ def fetch_all_jobs() -> List[Dict[str, Any]]:
                 org_name_bn = org.get("name_bn") or org.get("name") or "Unknown Organization"
                 org_url = org.get("website") or "No URL provided"
                 
-                # The API provides 'job_created_at' but no deadline. 
-                # We extract the YYYY-MM-DD portion.
+                # Extract the YYYY-MM-DD portion
                 created_date_raw = str(org.get("job_created_at", ""))[:10]
                 
                 for job in org.get("govt_jobs", []):
-                    # Map the API fields to the format our script expects
                     job_mapped = {
                         "job_primary_id": str(job.get("id", "")),
                         "job_title": str(job.get("job_title", "")),
                         "org_name_bn": org_name_bn,
-                        "vacancy": "N/A",  # Not provided in this endpoint
+                        "vacancy": "N/A",  
                         "published_date": created_date_raw if created_date_raw else "Unknown",
-                        
-                        # We use the published date as the deadline fallback 
-                        # so calendar_manager.py has a date to place the event on.
                         "deadline_date": created_date_raw if created_date_raw else "2026-12-31", 
-                        
                         "application_site_url": org_url
                     }
                     current_page_jobs.append(job_mapped)
                     
-        # Fallback for standard paginated arrays just in case the API changes
         elif isinstance(response_data, dict) and "data" in response_data:
             current_page_jobs = response_data.get("data", [])
         elif isinstance(response_data, list):
@@ -81,7 +74,6 @@ def fetch_all_jobs() -> List[Dict[str, Any]]:
         all_jobs.extend(current_page_jobs)
         logger.info(f"Extracted {len(current_page_jobs)} jobs from page {page}.")
         
-        # If the count of organizations on this page is less than the limit, we hit the end
         if isinstance(response_data, dict) and "govtOrgJobs" in response_data:
             if len(response_data["govtOrgJobs"]) < DEFAULT_LIMIT:
                 break
@@ -94,11 +86,18 @@ def fetch_all_jobs() -> List[Dict[str, Any]]:
 
 def _make_request_with_retry(url: str) -> Any:
     """
-    Makes an HTTP GET request with built-in retry logic for transient errors.
+    Makes an HTTP GET request with built-in retry logic and browser headers.
     """
+    # Masquerade as a standard Google Chrome browser so Teletalk doesn't block us
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "en-US,en;q=0.9"
+    }
+    
     for attempt in range(1, MAX_RETRIES + 1):
         try:
-            response = requests.get(url, timeout=15)
+            response = requests.get(url, headers=headers, timeout=15)
             response.raise_for_status() 
             return response.json()
             

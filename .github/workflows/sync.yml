@@ -33,13 +33,16 @@ jobs:
       - name: Run Job2Calendar sync
         run: python main.py
 
-      - name: Commit and push updates
+- name: Commit and push updates
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          # Add both the database file and the calendar feed file
-          git add processed_jobs.json jobs.ics || true
+          # Force create the file so Git doesn't crash if the script skipped it
+          touch jobs.ics
+          
+          # Add the database file (in data/) and the calendar feed file (in root)
+          git add data/processed_jobs.json jobs.ics || true
           
           # Check if there are any staged changes
           if git diff --staged --quiet; then
