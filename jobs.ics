@@ -21,16 +21,16 @@ SUMMARY:Office Support Staff (Vacancy: 08)
 UID:teletalk-job-14169@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260823
-DESCRIPTION:Organization: Bangladesh Rural Development Board (BRDB)\nPublished: 2026-07-22\nDeadline: 2026-08-23\nApplication URL:\nhttps://brdb.teletalk.com.bd/\n\nJob Primary ID: 14286
-SUMMARY:Data Entry Operator (Vacancy: 03)
-UID:teletalk-job-14286@job2calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260806
 DESCRIPTION:Organization: Barguna District (DCBARGUNA)\nPublished: 2026-07-08\nDeadline: 2026-08-06\nApplication URL:\nhttp://dcbarguna.teletalk.com.bd/\n\nJob Primary ID: 14231
 SUMMARY:Office Shohayok (Vacancy: 07)
 UID:teletalk-job-14231@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260823
+DESCRIPTION:Organization: Bangladesh Rural Development Board (BRDB)\nPublished: 2026-07-22\nDeadline: 2026-08-23\nApplication URL:\nhttps://brdb.teletalk.com.bd/\n\nJob Primary ID: 14286
+SUMMARY:Data Entry Operator (Vacancy: 03)
+UID:teletalk-job-14286@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260725
@@ -69,16 +69,10 @@ SUMMARY:Office Support Staff (Vacancy: 10)
 UID:teletalk-job-14268@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260823
-DESCRIPTION:Organization: Bangladesh Rural Development Board (BRDB)\nPublished: 2026-07-22\nDeadline: 2026-08-23\nApplication URL:\nhttps://brdb.teletalk.com.bd/\n\nJob Primary ID: 14289
-SUMMARY:Office Support Staff (Vacancy: 72)
-UID:teletalk-job-14289@job2calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260806
-DESCRIPTION:Organization: Department of Architecture ( ARCHITECTURE)\nPublished: 2026-07-15\nDeadline: 2026-08-06\nApplication URL:\nhttp://architecture.teletalk.com.bd/\n\nJob Primary ID: 14260
-SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 05)
-UID:teletalk-job-14260@job2calendar
+DTSTART;VALUE=DATE:20260727
+DESCRIPTION:Organization: Small Farmers Development Foundation (SFDF)\nPublished: 2026-06-28\nDeadline: 2026-07-27\nApplication URL:\nhttp://sfdf.teletalk.com.bd/\n\nJob Primary ID: 14117
+SUMMARY:Field Officer (Vacancy: 07)
+UID:teletalk-job-14117@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260812
@@ -87,10 +81,22 @@ SUMMARY:Office Assistant Cum Store Keeper (Vacancy: 07)
 UID:teletalk-job-14300@job2calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260806
+DESCRIPTION:Organization: Department of Architecture ( ARCHITECTURE)\nPublished: 2026-07-15\nDeadline: 2026-08-06\nApplication URL:\nhttp://architecture.teletalk.com.bd/\n\nJob Primary ID: 14260
+SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 05)
+UID:teletalk-job-14260@job2calendar
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260823
-DESCRIPTION:Organization: Bangladesh Rural Development Board (BRDB)\nPublished: 2026-07-22\nDeadline: 2026-08-23\nApplication URL:\nhttps://brdb.teletalk.com.bd/\n\nJob Primary ID: 14285
-SUMMARY:Office Assistant-Cum-Computer Operator (Vacancy: 30)
-UID:teletalk-job-14285@job2calendar
+DESCRIPTION:Organization: Bangladesh Rural Development Board (BRDB)\nPublished: 2026-07-22\nDeadline: 2026-08-23\nApplication URL:\nhttps://brdb.teletalk.com.bd/\n\nJob Primary ID: 14289
+SUMMARY:Office Support Staff (Vacancy: 72)
+UID:teletalk-job-14289@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260808
+DESCRIPTION:Organization: পল্লী উন্নয়ন একাডেমি জামালপুর\nPublished: 2026-07-09\nDeadline: 2026-08-08\nApplication URL:\nhttps://rdajamalpur.teletalk.com.bd/\n\nJob Primary ID: 14230
+SUMMARY:Office Assistant (Vacancy: 10)
+UID:teletalk-job-14230@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260730
@@ -99,10 +105,10 @@ SUMMARY:Office Assistant-Cum- Computer Operator (Vacancy: 07)
 UID:teletalk-job-14098@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260808
-DESCRIPTION:Organization: পল্লী উন্নয়ন একাডেমি জামালপুর\nPublished: 2026-07-09\nDeadline: 2026-08-08\nApplication URL:\nhttps://rdajamalpur.teletalk.com.bd/\n\nJob Primary ID: 14230
-SUMMARY:Office Assistant (Vacancy: 10)
-UID:teletalk-job-14230@job2calendar
+DTSTART;VALUE=DATE:20260823
+DESCRIPTION:Organization: Bangladesh Rural Development Board (BRDB)\nPublished: 2026-07-22\nDeadline: 2026-08-23\nApplication URL:\nhttps://brdb.teletalk.com.bd/\n\nJob Primary ID: 14285
+SUMMARY:Office Assistant-Cum-Computer Operator (Vacancy: 30)
+UID:teletalk-job-14285@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260820
@@ -123,22 +129,22 @@ SUMMARY:Office Assistant Cum Data Entry/Control Operator (Vacancy: 11)
 UID:teletalk-job-14303@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260808
-DESCRIPTION:Organization: Rural Development and Co-operative Division(RDCD)\nPublished: 2026-07-09\nDeadline: 2026-08-08\nApplication URL:\nhttp://rdcd.teletalk.com.bd/\n\nJob Primary ID: 14197
-SUMMARY:Office Support Staff (Vacancy: 01)
-UID:teletalk-job-14197@job2calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260806
 DESCRIPTION:Organization: Department of Architecture ( ARCHITECTURE)\nPublished: 2026-07-15\nDeadline: 2026-08-06\nApplication URL:\nhttp://architecture.teletalk.com.bd/\n\nJob Primary ID: 14263
 SUMMARY:Office Support Staff (Vacancy: 05)
 UID:teletalk-job-14263@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260728
-DESCRIPTION:Organization: জাতীয় পেনশন কর্তৃপক্ষ\nPublished: 2026-07-01\nDeadline: 2026-07-28\nApplication URL:\nhttps://npa.teletalk.com.bd/\n\nJob Primary ID: 14167
-SUMMARY:Office Assistant-cum-Computer Typist (Vacancy: 04)
-UID:teletalk-job-14167@job2calendar
+DTSTART;VALUE=DATE:20260808
+DESCRIPTION:Organization: Rural Development and Co-operative Division(RDCD)\nPublished: 2026-07-09\nDeadline: 2026-08-08\nApplication URL:\nhttp://rdcd.teletalk.com.bd/\n\nJob Primary ID: 14197
+SUMMARY:Office Support Staff (Vacancy: 01)
+UID:teletalk-job-14197@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260727
+DESCRIPTION:Organization: Small Farmers Development Foundation (SFDF)\nPublished: 2026-06-28\nDeadline: 2026-07-27\nApplication URL:\nhttp://sfdf.teletalk.com.bd/\n\nJob Primary ID: 14116
+SUMMARY:Upazila Manager (Vacancy: 25)
+UID:teletalk-job-14116@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260729
@@ -148,15 +154,15 @@ UID:teletalk-job-14233@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260728
+DESCRIPTION:Organization: জাতীয় পেনশন কর্তৃপক্ষ\nPublished: 2026-07-01\nDeadline: 2026-07-28\nApplication URL:\nhttps://npa.teletalk.com.bd/\n\nJob Primary ID: 14167
+SUMMARY:Office Assistant-cum-Computer Typist (Vacancy: 04)
+UID:teletalk-job-14167@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260728
 DESCRIPTION:Organization: Department of Women Affairs ( DWA )\nPublished: 2026-07-08\nDeadline: 2026-07-28\nApplication URL:\nhttps://dwa.teletalk.com.bd/dwa_2026/\n\nJob Primary ID: 14203
 SUMMARY:Office Shohayok (Vacancy: 438)
 UID:teletalk-job-14203@job2calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260730
-DESCRIPTION:Organization: রাষ্ট্রপতির কার্যালয়\nPublished: 2026-06-21\nDeadline: 2026-07-30\nApplication URL:\nhttps://bbp.teletalk.com.bd/\n\nJob Primary ID: 13968
-SUMMARY:Office Support Staff (Vacancy: 14)
-UID:teletalk-job-13968@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260812
@@ -165,22 +171,28 @@ SUMMARY:Office Support Staff (Vacancy: 04)
 UID:teletalk-job-14350@job2calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260730
+DESCRIPTION:Organization: রাষ্ট্রপতির কার্যালয়\nPublished: 2026-06-21\nDeadline: 2026-07-30\nApplication URL:\nhttps://bbp.teletalk.com.bd/\n\nJob Primary ID: 13968
+SUMMARY:Office Support Staff (Vacancy: 14)
+UID:teletalk-job-13968@job2calendar
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260808
 DESCRIPTION:Organization: পল্লী উন্নয়ন একাডেমি জামালপুর\nPublished: 2026-07-09\nDeadline: 2026-08-08\nApplication URL:\nhttps://rdajamalpur.teletalk.com.bd/\n\nJob Primary ID: 14228
 SUMMARY:Office Assistant-cum Computer Typist (Vacancy: 05)
 UID:teletalk-job-14228@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260827
-DESCRIPTION:Organization: Eastern Refinery Limited(ERLB)\nPublished: 2026-07-14\nDeadline: 2026-08-27\nApplication URL:\nhttp://erlb.teletalk.com.bd/\n\nJob Primary ID: 14254
-SUMMARY:Office Support Staff (Vacancy: 04)
-UID:teletalk-job-14254@job2calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260725
 DESCRIPTION:Organization: পল্লী উন্নয়ন ও সমবায় বিভাগ\nPublished: 2026-06-25\nDeadline: 2026-07-25\nApplication URL:\nhttps://rdarangpur.teletalk.com.bd/\n\nJob Primary ID: 14067
 SUMMARY:Office Assistant cum-Computer Typist (Vacancy: 05)
 UID:teletalk-job-14067@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260827
+DESCRIPTION:Organization: Eastern Refinery Limited(ERLB)\nPublished: 2026-07-14\nDeadline: 2026-08-27\nApplication URL:\nhttp://erlb.teletalk.com.bd/\n\nJob Primary ID: 14254
+SUMMARY:Office Support Staff (Vacancy: 04)
+UID:teletalk-job-14254@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260726
@@ -201,10 +213,10 @@ SUMMARY:Field Assistant (Vacancy: 02)
 UID:teletalk-job-14063@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260727
-DESCRIPTION:Organization: Small Farmers Development Foundation (SFDF)\nPublished: 2026-06-28\nDeadline: 2026-07-27\nApplication URL:\nhttp://sfdf.teletalk.com.bd/\n\nJob Primary ID: 14115
-SUMMARY:Office Assistant-cum-Data-Entry Operator (Vacancy: 10)
-UID:teletalk-job-14115@job2calendar
+DTSTART;VALUE=DATE:20260812
+DESCRIPTION:Organization: কারিগরি শিক্ষা অধিদপ্তর\nPublished: 2026-07-22\nDeadline: 2026-08-12\nApplication URL:\nhttps://dtev.teletalk.com.bd/dtev_2026/\n\nJob Primary ID: 14302
+SUMMARY:Office Assistant Cum Typist (Vacancy: 02)
+UID:teletalk-job-14302@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260808
@@ -213,10 +225,10 @@ SUMMARY:Office Assistant cum Computer Typist (Vacancy: 02)
 UID:teletalk-job-14196@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260812
-DESCRIPTION:Organization: কারিগরি শিক্ষা অধিদপ্তর\nPublished: 2026-07-22\nDeadline: 2026-08-12\nApplication URL:\nhttps://dtev.teletalk.com.bd/dtev_2026/\n\nJob Primary ID: 14302
-SUMMARY:Office Assistant Cum Typist (Vacancy: 02)
-UID:teletalk-job-14302@job2calendar
+DTSTART;VALUE=DATE:20260727
+DESCRIPTION:Organization: Small Farmers Development Foundation (SFDF)\nPublished: 2026-06-28\nDeadline: 2026-07-27\nApplication URL:\nhttp://sfdf.teletalk.com.bd/\n\nJob Primary ID: 14115
+SUMMARY:Office Assistant-cum-Data-Entry Operator (Vacancy: 10)
+UID:teletalk-job-14115@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260728
