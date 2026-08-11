@@ -1,7 +1,7 @@
 import logging
 import os
 import re
-from datetime import datetime
+from datetime import datetime, timedelta  # <-- timedelta যুক্ত করা হয়েছে
 from typing import Any, Dict, Optional
 
 from ics import Calendar, Event
@@ -43,11 +43,28 @@ def load_calendar() -> Calendar:
 
 def save_calendar(calendar_obj: Calendar) -> None:
     """
-    Saves the calendar object back to the local jobs.ics file.
+    Saves the calendar object back to the local jobs.ics file,
+    removing any events that are older than 2 days past their deadline.
     """
     try:
+        # Get today's date
+        today = datetime.now().date()
+        
+        # ২ দিন আগের ডেট বের করা হলো
+        expiration_date = today - timedelta(days=2) 
+        
+        for event in list(calendar_obj.events):
+            try:
+                # যদি জবের ডেডলাইন আজকের তারিখ থেকে ২ দিন বা তার বেশি পুরানো হয়, তবেই ডিলিট হবে
+                if event.begin.date() < expiration_date:
+                    calendar_obj.events.remove(event)
+                    logger.debug(f"Removed expired job event (older than 2 days): {event.name}")
+            except AttributeError:
+                pass
+
         with open(ICS_FILE_PATH, 'w', encoding='utf-8') as f:
             f.writelines(calendar_obj.serialize_iter())
+            
         logger.info(f"Successfully saved calendar updates to {ICS_FILE_PATH}.")
     except Exception as e:
         logger.exception(f"Failed to save calendar to {ICS_FILE_PATH}: {e}")
@@ -55,13 +72,6 @@ def save_calendar(calendar_obj: Calendar) -> None:
 def create_job_event(job: Dict[str, Any], calendar_obj: Calendar) -> bool:
     """
     Creates an all-day calendar event for a specific job and adds it to the calendar.
-    
-    Args:
-        job: Dictionary containing job details.
-        calendar_obj: The ics Calendar object to add the event to.
-        
-    Returns:
-        True if successfully added, False otherwise.
     """
     job_primary_id = str(job.get("job_primary_id", "Unknown"))
     
@@ -100,7 +110,6 @@ def create_job_event(job: Dict[str, Any], calendar_obj: Calendar) -> bool:
     event.make_all_day()
     
     # Crucial: Set a unique ID for this event based on the job_primary_id.
-    # This guarantees calendar apps won't create duplicates if they process the feed multiple times.
     event.uid = f"teletalk-job-{job_primary_id}@job2calendar"
     
     # 5. Add to calendar
