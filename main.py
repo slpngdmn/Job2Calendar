@@ -2,6 +2,7 @@ import logging
 import sys
 import os
 import requests
+import re  # <-- সংখ্যা খোঁজার জন্য নতুন লাইব্রেরি
 
 # Import our custom modules
 import api
@@ -29,7 +30,6 @@ def send_telegram_notification(new_jobs: list):
         return
         
     count = len(new_jobs)
-    # আপনার চাওয়া ফরম্যাটে মেসেজ তৈরি
     message = f"আজকে {count}টি নতুন job add হয়েছে।\nসবগুলো হলো:\n\n" + "\n".join(new_jobs)
     
     url = f"https://api.telegram.org/bot{token}/sendMessage"
@@ -70,7 +70,7 @@ def main() -> None:
     
     # 4. Process Matching Jobs
     new_processed_count = 0
-    new_jobs_list = []  # নতুন job গুলোর নাম সেভ করার লিস্ট
+    new_jobs_list = []
     
     for job in matching_jobs:
         job_primary_id = str(job.get("job_primary_id", ""))
@@ -79,7 +79,18 @@ def main() -> None:
             logger.warning(f"Job missing primary ID, skipping: {job.get('job_title', 'Unknown')}")
             continue
             
-        # Check local storage first (fast O(1) lookup)
+        # --- NEW: Vacancy Filter (১টি পদ থাকলে বাদ দেওয়া) ---
+        vacancy_str = str(job.get("vacancy", ""))
+        # string থেকে শুধু সংখ্যা বের করা (যেমন: "01" থেকে 1)
+        numbers = re.findall(r'\d+', vacancy_str)
+        if numbers:
+            vacancy_count = int(numbers[0])
+            if vacancy_count <= 1:
+                logger.info(f"Skipping '{job.get('job_title')}' because vacancy is only {vacancy_count}.")
+                continue
+        # -----------------------------------------------------
+            
+        # Check local storage first
         if job_primary_id in processed_jobs:
             logger.debug(f"Job {job_primary_id} already in local processed list. Skipping.")
             continue
@@ -93,10 +104,10 @@ def main() -> None:
             processed_jobs.add(job_primary_id)
             new_processed_count += 1
             
-            # নোটিফিকেশনের জন্য job এর নাম ও প্রতিষ্ঠানের নাম যুক্ত করা
             job_title = job.get('job_title', 'Unknown')
             org_name = job.get('org_name_bn', 'Unknown')
-            new_jobs_list.append(f"🔹 {job_title} ({org_name})")
+            # Telegram মেসেজে পদের সংখ্যাও (vacancy) দেখিয়ে দেওয়া হলো
+            new_jobs_list.append(f"🔹 {job_title} ({org_name}) [পদ: {vacancy_str}]")
         else:
             logger.error(f"Failed to process job {job_primary_id}. Will retry on next run.")
             
@@ -106,7 +117,6 @@ def main() -> None:
         storage.save_processed_jobs("processed_jobs.json", processed_jobs)
         logger.info(f"Successfully added {new_processed_count} new jobs to the calendar.")
         
-        # নতুন job পাওয়া গেলে Telegram এ মেসেজ পাঠানো হবে
         send_telegram_notification(new_jobs_list)
     else:
         calendar_manager.save_calendar(cal_obj)
