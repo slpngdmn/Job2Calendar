@@ -7,7 +7,7 @@ import requests
 import api
 from filter import filter_matching_jobs
 import storage
-import Job2Calendar.calendar_manager as calendar_manager
+import calendar_manager
 
 # Configure logging for the application
 logging.basicConfig(
