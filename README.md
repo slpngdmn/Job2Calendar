@@ -28,4 +28,12 @@ teletalk-job-calendar/
 ├── processed_jobs.json       # Local database of already processed jobs
 ├── requirements.txt          # Python dependencies
 ├── storage.py                # Handles reading/writing JSON files
+├── tests/                    # Unit test suite (pytest)
 └── README.md                 # Project documentation
+```
+
+## Running the tests
+
+```bash
+pip install -r requirements-dev.txt
+pytest --cov=api --cov=calendar_manager --cov=filter --cov=main --cov=storage --cov-report=term-missing
