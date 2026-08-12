@@ -37,3 +37,4 @@ teletalk-job-calendar/
 ```bash
 pip install -r requirements-dev.txt
 pytest --cov=api --cov=calendar_manager --cov=filter --cov=main --cov=storage --cov-report=term-missing
+```
