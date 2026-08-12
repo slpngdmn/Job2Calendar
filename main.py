@@ -2,7 +2,7 @@ import logging
 import sys
 import os
 import requests
-import re  # <-- সংখ্যা খোঁজার জন্য নতুন লাইব্রেরি
+import re
 
 # Import our custom modules
 import api
@@ -79,14 +79,27 @@ def main() -> None:
             logger.warning(f"Job missing primary ID, skipping: {job.get('job_title', 'Unknown')}")
             continue
             
-        # --- NEW: Vacancy Filter (১টি পদ থাকলে বাদ দেওয়া) ---
+        # --- NEW 1: Vacancy Filter (১টি পদ থাকলে বাদ দেওয়া) ---
         vacancy_str = str(job.get("vacancy", ""))
-        # string থেকে শুধু সংখ্যা বের করা (যেমন: "01" থেকে 1)
         numbers = re.findall(r'\d+', vacancy_str)
         if numbers:
             vacancy_count = int(numbers[0])
             if vacancy_count <= 1:
                 logger.info(f"Skipping '{job.get('job_title')}' because vacancy is only {vacancy_count}.")
+                continue
+        # -----------------------------------------------------
+
+        # --- NEW 2: DC Office Filter (নওগাঁ বাদে বাকি সব জেলার জব বাদ দেওয়া) ---
+        org_name = str(job.get('org_name', 'Unknown'))
+        org_name_lower = org_name.lower()
+        
+        # চেক করবে এটি ডিসি অফিসের জব কি না
+        if "dc office" in org_name_lower or "জেলা প্রশাসক" in org_name:
+            # যদি ডিসি অফিস হয়, তবে চেক করবে এটি নওগাঁ কি না
+            if "naogaon" in org_name_lower or "নওগাঁ" in org_name:
+                logger.info(f"Keeping '{job.get('job_title')}' because it is from Naogaon DC Office.")
+            else:
+                logger.info(f"Skipping '{job.get('job_title')}' because it is a district-specific DC Office job ({org_name}).")
                 continue
         # -----------------------------------------------------
             
@@ -105,9 +118,8 @@ def main() -> None:
             new_processed_count += 1
             
             job_title = job.get('job_title', 'Unknown')
-            org_name = job.get('org_name', 'Unknown')
             # Telegram মেসেজে পদের সংখ্যাও (vacancy) দেখিয়ে দেওয়া হলো
-            new_jobs_list.append(f"🔹 {job_title} ({org_name}) [পদ: {vacancy_str}]")
+            new_jobs_list.append(f"🔹 {job_title} ({org_name}) [Post: {vacancy_str}]")
         else:
             logger.error(f"Failed to process job {job_primary_id}. Will retry on next run.")
             
