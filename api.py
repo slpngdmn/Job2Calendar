@@ -205,6 +205,10 @@ def _make_request_with_retry(url: str) -> Any:
             response.raise_for_status() 
             return response.json()
             
+        except (requests.exceptions.InvalidJSONError, ValueError) as e:
+            # A malformed body will not become valid on a retry. This must stay
+            # above RequestException: requests.JSONDecodeError subclasses it.
+            raise ApiError(f"Failed to parse JSON from {url}: {e}") from e
         except requests.exceptions.Timeout as e:
             last_error = e
             logger.warning(f"Timeout on attempt {attempt}/{MAX_RETRIES} for {url}: {e}")
@@ -217,9 +221,6 @@ def _make_request_with_retry(url: str) -> Any:
         except requests.exceptions.RequestException as e:
             last_error = e
             logger.warning(f"Request error on attempt {attempt}/{MAX_RETRIES} for {url}: {e}")
-        except ValueError as e:
-            # A malformed body will not become valid on a retry.
-            raise ApiError(f"Failed to parse JSON from {url}: {e}") from e
             
         if attempt < MAX_RETRIES:
             time.sleep(RETRY_DELAY_SECONDS)

@@ -113,6 +113,7 @@ def _write_atomically(filepath: str, content: str) -> None:
             f.write(content)
             f.flush()
             os.fsync(f.fileno())
+        os.chmod(tmp_path, 0o644)
         os.replace(tmp_path, filepath)
     except BaseException:
         if os.path.exists(tmp_path):
