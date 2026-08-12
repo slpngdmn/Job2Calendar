@@ -2,8 +2,8 @@ name: Job2Calendar Sync
 
 on:
   schedule:
-    # Runs once a day at midnight UTC.
-    - cron: '0 0 * * *'
+    # Twice a day: 00:00 and 12:00 UTC (06:00 and 18:00 Bangladesh time).
+    - cron: '0 0,12 * * *'
   # Allows manual triggering from the GitHub Actions tab
   workflow_dispatch: 
 
