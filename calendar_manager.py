@@ -3,12 +3,46 @@ import os
 import re
 from datetime import datetime, timedelta  # <-- timedelta যুক্ত করা হয়েছে
 from typing import Any, Dict, Optional
+from urllib.parse import urlparse
 
 from ics import Calendar, Event
 
 logger = logging.getLogger(__name__)
 
 ICS_FILE_PATH = "jobs.ics"
+
+MAX_FIELD_LENGTH = 500
+ALLOWED_URL_SCHEMES = ("http", "https")
+CONTROL_CHARS_PATTERN = re.compile(r"[\x00-\x1f\x7f]")
+
+def sanitize_text(value: Any, fallback: str = "") -> str:
+    """
+    Normalises a remote API string for safe inclusion in an iCalendar property:
+    strips control characters (including CR/LF, which could otherwise forge
+    additional ICS properties) and caps the length.
+    """
+    text = CONTROL_CHARS_PATTERN.sub(" ", str(value)).strip()
+    text = re.sub(r"\s{2,}", " ", text)
+    if not text:
+        return fallback
+    return text[:MAX_FIELD_LENGTH]
+
+def sanitize_url(value: Any, fallback: str = "No URL provided") -> str:
+    """
+    Accepts only plain http(s) URLs from the remote API so that schemes such as
+    javascript: or data: never reach a calendar client.
+    """
+    url = sanitize_text(value)
+    if not url:
+        return fallback
+    try:
+        parsed = urlparse(url)
+    except ValueError:
+        return fallback
+    if parsed.scheme.lower() not in ALLOWED_URL_SCHEMES or not parsed.netloc:
+        logger.warning(f"Discarding untrusted application URL: {url}")
+        return fallback
+    return url
 
 def extract_date(date_string: str) -> Optional[datetime]:
     """
@@ -73,15 +107,15 @@ def create_job_event(job: Dict[str, Any], calendar_obj: Calendar) -> bool:
     """
     Creates an all-day calendar event for a specific job and adds it to the calendar.
     """
-    job_primary_id = str(job.get("job_primary_id", "Unknown"))
+    job_primary_id = sanitize_text(job.get("job_primary_id"), "Unknown")
     
-    # 1. Extract necessary fields
-    job_title = str(job.get("job_title", "Unknown Job Title")).strip()
-    vacancy = str(job.get("vacancy", "N/A")).strip()
-    org_name = str(job.get("org_name", "Unknown Organization")).strip()
-    published_date = str(job.get("published_date", "Unknown")).strip()
-    deadline_date_raw = str(job.get("deadline_date", "")).strip()
-    application_site_url = str(job.get("application_site_url", "No URL provided")).strip()
+    # 1. Extract necessary fields (every value comes from a remote API and is untrusted)
+    job_title = sanitize_text(job.get("job_title"), "Unknown Job Title")
+    vacancy = sanitize_text(job.get("vacancy"), "N/A")
+    org_name = sanitize_text(job.get("org_name"), "Unknown Organization")
+    published_date = sanitize_text(job.get("published_date"), "Unknown")
+    deadline_date_raw = sanitize_text(job.get("deadline_date"))
+    application_site_url = sanitize_url(job.get("application_site_url"))
     
     # 2. Parse deadline for the all-day event
     deadline_dt = extract_date(deadline_date_raw)
@@ -110,7 +144,7 @@ def create_job_event(job: Dict[str, Any], calendar_obj: Calendar) -> bool:
     event.make_all_day()
     
     # Crucial: Set a unique ID for this event based on the job_primary_id.
-    event.uid = f"teletalk-job-{job_primary_id}@job2calendar"
+    event.uid = f"teletalk-job-{re.sub(r'[^A-Za-z0-9._-]', '', job_primary_id)}@job2calendar"
     
     # 5. Add to calendar
     try:

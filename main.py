@@ -18,6 +18,16 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+TELEGRAM_TIMEOUT_SECONDS = 15
+
+def _redact(text: str, secret: str) -> str:
+    """
+    Replaces every occurrence of a secret in the given text with a placeholder.
+    """
+    if not secret:
+        return text
+    return text.replace(secret, "***REDACTED***")
+
 def send_telegram_notification(new_jobs: list):
     """
     Sends a formatted notification to Telegram with the newly added jobs.
@@ -39,11 +49,12 @@ def send_telegram_notification(new_jobs: list):
     }
     
     try:
-        response = requests.post(url, json=payload)
+        response = requests.post(url, json=payload, timeout=TELEGRAM_TIMEOUT_SECONDS)
         response.raise_for_status()
         logger.info("Telegram notification sent successfully.")
     except Exception as e:
-        logger.error(f"Failed to send Telegram notification: {e}")
+        # requests embeds the request URL (which carries the bot token) in its error messages.
+        logger.error(f"Failed to send Telegram notification: {_redact(str(e), token)}")
 
 def main() -> None:
     logger.info("Starting Job2Calendar ICS sync process...")
@@ -117,9 +128,12 @@ def main() -> None:
             processed_jobs.add(job_primary_id)
             new_processed_count += 1
             
-            job_title = job.get('job_title', 'Unknown')
+            job_title = calendar_manager.sanitize_text(job.get('job_title'), 'Unknown')
             # Telegram মেসেজে পদের সংখ্যাও (vacancy) দেখিয়ে দেওয়া হলো
-            new_jobs_list.append(f"🔹 {job_title} ({org_name}) [Post: {vacancy_str}]")
+            new_jobs_list.append(
+                f"🔹 {job_title} ({calendar_manager.sanitize_text(org_name, 'Unknown')})"
+                f" [Post: {calendar_manager.sanitize_text(vacancy_str, 'N/A')}]"
+            )
         else:
             logger.error(f"Failed to process job {job_primary_id}. Will retry on next run.")
             

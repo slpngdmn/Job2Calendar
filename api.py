@@ -37,7 +37,7 @@ def fetch_all_jobs() -> List[Dict[str, Any]]:
     all_jobs: List[Dict[str, Any]] = []
     
     for idx, org_id in enumerate(org_ids, start=1):
-        url = f"{JOB_LIST_URL}?orgId={org_id}&skipLimit=YES"
+        url = f"{JOB_LIST_URL}?orgId={int(org_id)}&skipLimit=YES"
         logger.debug(f"[{idx}/{len(org_ids)}] Fetching detailed jobs for orgId={org_id}...")
         
         jobs_data = _make_request_with_retry(url)
@@ -133,10 +133,18 @@ def _fetch_organization_ids() -> List[int]:
             
         added_new = False
         for org in org_list:
-            if isinstance(org, dict) and "id" in org:
-                if org["id"] not in org_ids_set:
-                    org_ids_set.add(org["id"])
-                    added_new = True
+            if not isinstance(org, dict) or "id" not in org:
+                continue
+            # Only accept integral IDs so that a malicious response cannot inject
+            # extra query parameters into the job-list URL built from them.
+            try:
+                org_id = int(org["id"])
+            except (TypeError, ValueError):
+                logger.warning("Skipping organization with non-numeric id.")
+                continue
+            if org_id not in org_ids_set:
+                org_ids_set.add(org_id)
+                added_new = True
                     
         # Stop paginating when we reach a page that yields zero new IDs 
         # (Handles cases where APIs repeatedly serve the last page on out-of-bounds requests)
