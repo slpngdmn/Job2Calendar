@@ -78,7 +78,7 @@ def create_job_event(job: Dict[str, Any], calendar_obj: Calendar) -> bool:
     # 1. Extract necessary fields
     job_title = str(job.get("job_title", "Unknown Job Title")).strip()
     vacancy = str(job.get("vacancy", "N/A")).strip()
-    org_name_bn = str(job.get("org_name_bn", "Unknown Organization")).strip()
+    org_name = str(job.get("org_name", "Unknown Organization")).strip()
     published_date = str(job.get("published_date", "Unknown")).strip()
     deadline_date_raw = str(job.get("deadline_date", "")).strip()
     application_site_url = str(job.get("application_site_url", "No URL provided")).strip()
@@ -93,7 +93,7 @@ def create_job_event(job: Dict[str, Any], calendar_obj: Calendar) -> bool:
     title = f"{job_title} (Vacancy: {vacancy})"
     
     description = (
-        f"Organization: {org_name_bn}\n"
+        f"Organization: {org_name}\n"
         f"Published: {published_date}\n"
         f"Deadline: {deadline_date_raw}\n"
         f"Application URL:\n{application_site_url}\n\n"

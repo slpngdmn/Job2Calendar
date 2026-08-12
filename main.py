@@ -105,7 +105,7 @@ def main() -> None:
             new_processed_count += 1
             
             job_title = job.get('job_title', 'Unknown')
-            org_name = job.get('org_name_bn', 'Unknown')
+            org_name = job.get('org_name', 'Unknown')
             # Telegram মেসেজে পদের সংখ্যাও (vacancy) দেখিয়ে দেওয়া হলো
             new_jobs_list.append(f"🔹 {job_title} ({org_name}) [পদ: {vacancy_str}]")
         else:

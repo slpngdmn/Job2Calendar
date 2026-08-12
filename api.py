@@ -65,7 +65,7 @@ def fetch_all_jobs() -> List[Dict[str, Any]]:
                 
             # Extract organization info from the nested object
             org_info = job.get("job_utilities_govtorganization", {}) or {}
-            org_name_bn = org_info.get("name_bn") or org_info.get("name") or "Unknown Organization"
+            org_name = org_info.get("name") or "Unknown Organization"
             
             # Extract vacancy string
             vacancy_val = str(job.get("vacancy", "")).strip()
@@ -87,7 +87,7 @@ def fetch_all_jobs() -> List[Dict[str, Any]]:
             job_mapped = {
                 "job_primary_id": str(job.get("id", job.get("job_id", ""))),
                 "job_title": str(job.get("job_title", "")).strip(),
-                "org_name_bn": org_name_bn,
+                "org_name": org_name,
                 "vacancy": vacancy_val,
                 "published_date": pub_date,
                 "deadline_date": dl_date,
