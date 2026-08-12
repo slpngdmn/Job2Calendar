@@ -2,13 +2,16 @@ import logging
 import sys
 import os
 import requests
-import re
 
 # Import our custom modules
 import api
 from filter import filter_matching_jobs
 import storage
 import calendar_manager
+from utils import first_int, get_field
+
+KEYWORDS_FILE = "keywords.json"
+PROCESSED_JOBS_FILE = "processed_jobs.json"
 
 # Configure logging for the application
 logging.basicConfig(
@@ -49,12 +52,12 @@ def main() -> None:
     logger.info("Starting Job2Calendar ICS sync process...")
     
     # 1. Load Local Data
-    keywords = storage.load_keywords("keywords.json")
+    keywords = storage.load_keywords(KEYWORDS_FILE)
     if not keywords:
         logger.warning("No keywords found to filter by. Exiting.")
         sys.exit(0)
         
-    processed_jobs = storage.load_processed_jobs("processed_jobs.json")
+    processed_jobs = storage.load_processed_jobs(PROCESSED_JOBS_FILE)
     
     # 2. Fetch and Filter Jobs
     all_jobs = api.fetch_all_jobs()
@@ -73,24 +76,22 @@ def main() -> None:
     new_jobs_list = []
     
     for job in matching_jobs:
-        job_primary_id = str(job.get("job_primary_id", ""))
+        job_primary_id = get_field(job, "job_primary_id")
         
-        if not job_primary_id or job_primary_id == "None":
-            logger.warning(f"Job missing primary ID, skipping: {job.get('job_title', 'Unknown')}")
+        if not job_primary_id:
+            logger.warning(f"Job missing primary ID, skipping: {get_field(job, 'job_title', 'Unknown')}")
             continue
             
         # --- NEW 1: Vacancy Filter (১টি পদ থাকলে বাদ দেওয়া) ---
-        vacancy_str = str(job.get("vacancy", ""))
-        numbers = re.findall(r'\d+', vacancy_str)
-        if numbers:
-            vacancy_count = int(numbers[0])
-            if vacancy_count <= 1:
-                logger.info(f"Skipping '{job.get('job_title')}' because vacancy is only {vacancy_count}.")
-                continue
+        vacancy_str = get_field(job, "vacancy")
+        vacancy_count = first_int(vacancy_str)
+        if vacancy_count is not None and vacancy_count <= 1:
+            logger.info(f"Skipping '{job.get('job_title')}' because vacancy is only {vacancy_count}.")
+            continue
         # -----------------------------------------------------
 
         # --- NEW 2: DC Office Filter (নওগাঁ বাদে বাকি সব জেলার জব বাদ দেওয়া) ---
-        org_name = str(job.get('org_name', 'Unknown'))
+        org_name = get_field(job, "org_name", "Unknown")
         org_name_lower = org_name.lower()
         
         # চেক করবে এটি ডিসি অফিসের জব কি না
@@ -117,7 +118,7 @@ def main() -> None:
             processed_jobs.add(job_primary_id)
             new_processed_count += 1
             
-            job_title = job.get('job_title', 'Unknown')
+            job_title = get_field(job, "job_title", "Unknown")
             # Telegram মেসেজে পদের সংখ্যাও (vacancy) দেখিয়ে দেওয়া হলো
             new_jobs_list.append(f"🔹 {job_title} ({org_name}) [Post: {vacancy_str}]")
         else:
@@ -126,7 +127,7 @@ def main() -> None:
     # 5. Save State and Send Notification
     if new_processed_count > 0:
         calendar_manager.save_calendar(cal_obj)
-        storage.save_processed_jobs("processed_jobs.json", processed_jobs)
+        storage.save_processed_jobs(PROCESSED_JOBS_FILE, processed_jobs)
         logger.info(f"Successfully added {new_processed_count} new jobs to the calendar.")
         
         send_telegram_notification(new_jobs_list)

@@ -1,29 +1,16 @@
 import logging
 import os
-import re
 from datetime import datetime, timedelta  # <-- timedelta যুক্ত করা হয়েছে
-from typing import Any, Dict, Optional
+from typing import Any, Dict
 
 from ics import Calendar, Event
+
+from utils import extract_date, get_field
 
 logger = logging.getLogger(__name__)
 
 ICS_FILE_PATH = "jobs.ics"
-
-def extract_date(date_string: str) -> Optional[datetime]:
-    """
-    Attempts to extract a valid YYYY-MM-DD from a given date string.
-    """
-    if not date_string:
-        return None
-        
-    match = re.search(r'\d{4}-\d{2}-\d{2}', str(date_string))
-    if match:
-        try:
-            return datetime.strptime(match.group(0), "%Y-%m-%d")
-        except ValueError:
-            return None
-    return None
+EVENT_EXPIRY_DAYS = 2
 
 def load_calendar() -> Calendar:
     """
@@ -51,7 +38,7 @@ def save_calendar(calendar_obj: Calendar) -> None:
         today = datetime.now().date()
         
         # ২ দিন আগের ডেট বের করা হলো
-        expiration_date = today - timedelta(days=2) 
+        expiration_date = today - timedelta(days=EVENT_EXPIRY_DAYS)
         
         for event in list(calendar_obj.events):
             try:
@@ -73,15 +60,15 @@ def create_job_event(job: Dict[str, Any], calendar_obj: Calendar) -> bool:
     """
     Creates an all-day calendar event for a specific job and adds it to the calendar.
     """
-    job_primary_id = str(job.get("job_primary_id", "Unknown"))
+    job_primary_id = get_field(job, "job_primary_id", "Unknown")
     
     # 1. Extract necessary fields
-    job_title = str(job.get("job_title", "Unknown Job Title")).strip()
-    vacancy = str(job.get("vacancy", "N/A")).strip()
-    org_name = str(job.get("org_name", "Unknown Organization")).strip()
-    published_date = str(job.get("published_date", "Unknown")).strip()
-    deadline_date_raw = str(job.get("deadline_date", "")).strip()
-    application_site_url = str(job.get("application_site_url", "No URL provided")).strip()
+    job_title = get_field(job, "job_title", "Unknown Job Title")
+    vacancy = get_field(job, "vacancy", "N/A")
+    org_name = get_field(job, "org_name", "Unknown Organization")
+    published_date = get_field(job, "published_date", "Unknown")
+    deadline_date_raw = get_field(job, "deadline_date")
+    application_site_url = get_field(job, "application_site_url", "No URL provided")
     
     # 2. Parse deadline for the all-day event
     deadline_dt = extract_date(deadline_date_raw)

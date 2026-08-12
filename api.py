@@ -3,14 +3,18 @@ import time
 from typing import Any, Dict, List, Set
 import requests
 
+from utils import clean_str, extract_list, iso_date_prefix
+
 logger = logging.getLogger(__name__)
 
 # Base API Endpoints
 ORG_LIST_URL = "https://alljobs.teletalk.com.bd/api/v1/govt-jobs/org-list"
 JOB_LIST_URL = "https://alljobs.teletalk.com.bd/api/v1/govt-jobs/list"
+DEFAULT_APPLICATION_SITE = "https://alljobs.teletalk.com.bd"
 
 MAX_RETRIES = 3
 RETRY_DELAY_SECONDS = 3
+REQUEST_INTERVAL_SECONDS = 0.5
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -45,48 +49,34 @@ def fetch_all_jobs() -> List[Dict[str, Any]]:
         if not jobs_data:
             continue
             
-        raw_jobs = []
-        if isinstance(jobs_data, list):
-            raw_jobs = jobs_data
-        elif isinstance(jobs_data, dict):
-            # Check for common wrapper keys
-            raw_jobs = jobs_data.get("govt_jobs", jobs_data.get("data", []))
-            
-            # If not found, dynamically find the first array/list in the JSON response
-            if not raw_jobs:
-                for val in jobs_data.values():
-                    if isinstance(val, list):
-                        raw_jobs = val
-                        break
-        
+        raw_jobs = extract_list(jobs_data, "govt_jobs", "data")
+
         for job in raw_jobs:
             if not isinstance(job, dict):
                 continue
                 
             # Extract organization info from the nested object
             org_info = job.get("job_utilities_govtorganization", {}) or {}
-            org_name = org_info.get("name") or "Unknown Organization"
+            org_name = clean_str(org_info.get("name"), "Unknown Organization")
             
             # Extract vacancy string
-            vacancy_val = str(job.get("vacancy", "")).strip()
-            if not vacancy_val or vacancy_val.lower() == "none" or job.get("vacancy_not_specific"):
+            vacancy_val = clean_str(job.get("vacancy"), "Not Specific")
+            if job.get("vacancy_not_specific"):
                 vacancy_val = "Not Specific"
                 
             # Extract YYYY-MM-DD from ISO timestamp (e.g., "2026-07-21T04:00:00.000Z")
-            pub_date_raw = str(job.get("published_date", ""))
-            pub_date = pub_date_raw[:10] if len(pub_date_raw) >= 10 else "Unknown"
-            
-            dl_date_raw = str(job.get("deadline_date", ""))
-            dl_date = dl_date_raw[:10] if len(dl_date_raw) >= 10 else pub_date
+            pub_date = iso_date_prefix(job.get("published_date"))
+            dl_date = iso_date_prefix(job.get("deadline_date"), default=pub_date)
             
             # Extract application site URL
-            app_site = str(job.get("application_site", "")).strip()
-            if not app_site or app_site.lower() == "none":
-                app_site = str(org_info.get("website", "https://alljobs.teletalk.com.bd")).strip()
+            app_site = clean_str(
+                job.get("application_site"),
+                clean_str(org_info.get("website"), DEFAULT_APPLICATION_SITE),
+            )
                 
             job_mapped = {
-                "job_primary_id": str(job.get("id", job.get("job_id", ""))),
-                "job_title": str(job.get("job_title", "")).strip(),
+                "job_primary_id": clean_str(job.get("id", job.get("job_id"))),
+                "job_title": clean_str(job.get("job_title")),
                 "org_name": org_name,
                 "vacancy": vacancy_val,
                 "published_date": pub_date,
@@ -97,7 +87,7 @@ def fetch_all_jobs() -> List[Dict[str, Any]]:
             all_jobs.append(job_mapped)
             
         # Brief pause between API calls to respect the server limits
-        time.sleep(0.5)
+        time.sleep(REQUEST_INTERVAL_SECONDS)
         
     logger.info(f"Successfully retrieved and mapped {len(all_jobs)} detailed jobs.")
     return all_jobs
@@ -116,18 +106,8 @@ def _fetch_organization_ids() -> List[int]:
         if not response_data:
             break
             
-        org_list = []
-        if isinstance(response_data, dict):
-            org_list = response_data.get("govtOrgJobs", response_data.get("data", []))
-            # Fallback: scan for list dynamically
-            if not org_list:
-                for val in response_data.values():
-                    if isinstance(val, list):
-                        org_list = val
-                        break
-        elif isinstance(response_data, list):
-            org_list = response_data
-            
+        org_list = extract_list(response_data, "govtOrgJobs", "data")
+
         if not org_list:
             break
             
@@ -144,7 +124,7 @@ def _fetch_organization_ids() -> List[int]:
             break
             
         page += 1
-        time.sleep(0.5)
+        time.sleep(REQUEST_INTERVAL_SECONDS)
         
     return list(org_ids_set)
 

@@ -1,6 +1,8 @@
 import logging
 from typing import Any, Dict, List
 
+from utils import clean_str
+
 logger = logging.getLogger(__name__)
 
 def filter_matching_jobs(jobs: List[Dict[str, Any]], keywords: List[str]) -> List[Dict[str, Any]]:
@@ -29,11 +31,9 @@ def filter_matching_jobs(jobs: List[Dict[str, Any]], keywords: List[str]) -> Lis
     
     for job in jobs:
         # Safely extract the job title, defaulting to empty string if the key is missing or None
-        raw_title = job.get("job_title")
-        if not raw_title:
+        title_lower = clean_str(job.get("job_title")).lower()
+        if not title_lower:
             continue
-            
-        title_lower = str(raw_title).lower()
         
         # If any of our configured keywords are inside the job title, keep it
         if any(keyword in title_lower for keyword in lower_keywords):
