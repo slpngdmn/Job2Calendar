@@ -1,7 +1,10 @@
 import logging
 import time
+from dataclasses import dataclass, field
 from typing import Any, Dict, List, Set
 import requests
+
+from errors import ApiError
 
 logger = logging.getLogger(__name__)
 
@@ -18,31 +21,48 @@ HEADERS = {
     "Accept-Language": "en-US,en;q=0.9"
 }
 
-def fetch_all_jobs() -> List[Dict[str, Any]]:
+@dataclass
+class JobFetchResult:
+    """Outcome of a fetch run, including organizations that could not be read."""
+
+    jobs: List[Dict[str, Any]] = field(default_factory=list)
+    failed_org_ids: List[int] = field(default_factory=list)
+
+    @property
+    def partial(self) -> bool:
+        return bool(self.failed_org_ids)
+
+
+def fetch_all_jobs() -> JobFetchResult:
     """
     Two-step job fetching process:
     1. Retrieves all active organization IDs from the org-list endpoint.
     2. Queries the detailed job list endpoint for each organization to extract 
        exact vacancy numbers, publication dates, application deadlines, and portal URLs.
+
+    Raises:
+        ApiError: if the organization list is unavailable, or every organization
+            query failed and the run therefore produced no trustworthy data.
     """
     logger.info("Starting two-step job fetching process from Teletalk API...")
     
     org_ids = _fetch_organization_ids()
-    if not org_ids:
-        logger.error("No organization IDs retrieved. Aborting job fetch.")
-        return []
         
     logger.info(f"Found {len(org_ids)} unique organizations. Fetching detailed job lists...")
     
     all_jobs: List[Dict[str, Any]] = []
+    failed_org_ids: List[int] = []
     
     for idx, org_id in enumerate(org_ids, start=1):
         url = f"{JOB_LIST_URL}?orgId={org_id}&skipLimit=YES"
         logger.debug(f"[{idx}/{len(org_ids)}] Fetching detailed jobs for orgId={org_id}...")
         
-        jobs_data = _make_request_with_retry(url)
-        
-        if not jobs_data:
+        try:
+            jobs_data = _make_request_with_retry(url)
+        except ApiError as e:
+            logger.error(f"Giving up on orgId={org_id}: {e}")
+            failed_org_ids.append(org_id)
+            time.sleep(0.5)
             continue
             
         raw_jobs = []
@@ -99,22 +119,38 @@ def fetch_all_jobs() -> List[Dict[str, Any]]:
         # Brief pause between API calls to respect the server limits
         time.sleep(0.5)
         
+    if failed_org_ids and len(failed_org_ids) == len(org_ids):
+        raise ApiError(
+            f"All {len(org_ids)} organization job queries failed; no job data could be retrieved."
+        )
+        
+    if failed_org_ids:
+        logger.error(
+            f"Job data is incomplete: {len(failed_org_ids)}/{len(org_ids)} organizations "
+            f"failed after retries (orgIds: {failed_org_ids})."
+        )
+        
     logger.info(f"Successfully retrieved and mapped {len(all_jobs)} detailed jobs.")
-    return all_jobs
+    return JobFetchResult(jobs=all_jobs, failed_org_ids=failed_org_ids)
 
 def _fetch_organization_ids() -> List[int]:
     """
     Paginates through the org-list endpoint to gather all organization IDs.
+
+    Raises:
+        ApiError: if a page request fails after retries, or if no IDs were found.
+            A failing page is never treated as the end of the pagination, so a
+            transport error can not silently truncate the organization list.
     """
     org_ids_set: Set[int] = set()
     page = 1
     
     while True:
         url = f"{ORG_LIST_URL}?page={page}&limit=50"
-        response_data = _make_request_with_retry(url)
-        
-        if not response_data:
-            break
+        try:
+            response_data = _make_request_with_retry(url)
+        except ApiError as e:
+            raise ApiError(f"Organization list page {page} could not be fetched: {e}") from e
             
         org_list = []
         if isinstance(response_data, dict):
@@ -146,30 +182,46 @@ def _fetch_organization_ids() -> List[int]:
         page += 1
         time.sleep(0.5)
         
+    if not org_ids_set:
+        raise ApiError("The organization list endpoint returned no organization IDs.")
+        
     return list(org_ids_set)
 
 def _make_request_with_retry(url: str) -> Any:
     """
     Makes an HTTP GET request with browser headers and retry logic.
+
+    Returns:
+        The decoded JSON body.
+
+    Raises:
+        ApiError: if every attempt failed. The last error is chained as the cause.
     """
+    last_error: Exception = ApiError(f"No request attempt was made for {url}.")
+    
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             response = requests.get(url, headers=HEADERS, timeout=15)
             response.raise_for_status() 
             return response.json()
             
-        except requests.exceptions.HTTPError as e:
-            logger.error(f"HTTP error on attempt {attempt}/{MAX_RETRIES} for {url}: {e}")
-        except requests.exceptions.ConnectionError as e:
-            logger.error(f"Connection error on attempt {attempt}/{MAX_RETRIES} for {url}: {e}")
         except requests.exceptions.Timeout as e:
-            logger.error(f"Timeout on attempt {attempt}/{MAX_RETRIES} for {url}: {e}")
+            last_error = e
+            logger.warning(f"Timeout on attempt {attempt}/{MAX_RETRIES} for {url}: {e}")
+        except requests.exceptions.ConnectionError as e:
+            last_error = e
+            logger.warning(f"Connection error on attempt {attempt}/{MAX_RETRIES} for {url}: {e}")
+        except requests.exceptions.HTTPError as e:
+            last_error = e
+            logger.warning(f"HTTP error on attempt {attempt}/{MAX_RETRIES} for {url}: {e}")
+        except requests.exceptions.RequestException as e:
+            last_error = e
+            logger.warning(f"Request error on attempt {attempt}/{MAX_RETRIES} for {url}: {e}")
         except ValueError as e:
-            logger.error(f"Failed to parse JSON from {url}: {e}")
-        except Exception as e:
-            logger.exception(f"Unexpected error on attempt {attempt}/{MAX_RETRIES} for {url}: {e}")
+            # A malformed body will not become valid on a retry.
+            raise ApiError(f"Failed to parse JSON from {url}: {e}") from e
             
         if attempt < MAX_RETRIES:
             time.sleep(RETRY_DELAY_SECONDS)
             
-    return None
+    raise ApiError(f"Request to {url} failed after {MAX_RETRIES} attempts: {last_error}") from last_error

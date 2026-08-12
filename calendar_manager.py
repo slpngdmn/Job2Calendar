@@ -1,10 +1,13 @@
 import logging
 import os
 import re
+import tempfile
 from datetime import datetime, timedelta  # <-- timedelta যুক্ত করা হয়েছে
 from typing import Any, Dict, Optional
 
 from ics import Calendar, Event
+
+from errors import CalendarError
 
 logger = logging.getLogger(__name__)
 
@@ -28,46 +31,72 @@ def extract_date(date_string: str) -> Optional[datetime]:
 def load_calendar() -> Calendar:
     """
     Loads the existing calendar from the local jobs.ics file.
-    If the file doesn't exist or is corrupt, returns a new empty Calendar.
+    An empty or absent file yields a new empty Calendar.
+
+    Raises:
+        CalendarError: if an existing feed cannot be read or parsed. Falling back
+            to an empty calendar would silently drop every event already
+            published to subscribers.
     """
-    if os.path.exists(ICS_FILE_PATH):
-        try:
-            with open(ICS_FILE_PATH, 'r', encoding='utf-8') as f:
-                file_content = f.read()
-                if file_content.strip():
-                    return Calendar(file_content)
-        except Exception as e:
-            logger.error(f"Failed to load existing {ICS_FILE_PATH}: {e}. Starting fresh.")
-    
-    return Calendar()
+    if not os.path.exists(ICS_FILE_PATH):
+        logger.info(f"No existing {ICS_FILE_PATH} found. Starting a new calendar.")
+        return Calendar()
+        
+    try:
+        with open(ICS_FILE_PATH, 'r', encoding='utf-8') as f:
+            file_content = f.read()
+    except OSError as e:
+        raise CalendarError(f"Failed to read {ICS_FILE_PATH}: {e}") from e
+        
+    if not file_content.strip():
+        logger.info(f"{ICS_FILE_PATH} is empty. Starting a new calendar.")
+        return Calendar()
+        
+    try:
+        return Calendar(file_content)
+    except Exception as e:
+        raise CalendarError(
+            f"Existing {ICS_FILE_PATH} could not be parsed: {e}. "
+            "Refusing to overwrite it with an empty calendar; fix or delete the file."
+        ) from e
 
 def save_calendar(calendar_obj: Calendar) -> None:
     """
     Saves the calendar object back to the local jobs.ics file,
     removing any events that are older than 2 days past their deadline.
-    """
-    try:
-        # Get today's date
-        today = datetime.now().date()
-        
-        # ২ দিন আগের ডেট বের করা হলো
-        expiration_date = today - timedelta(days=2) 
-        
-        for event in list(calendar_obj.events):
-            try:
-                # যদি জবের ডেডলাইন আজকের তারিখ থেকে ২ দিন বা তার বেশি পুরানো হয়, তবেই ডিলিট হবে
-                if event.begin.date() < expiration_date:
-                    calendar_obj.events.remove(event)
-                    logger.debug(f"Removed expired job event (older than 2 days): {event.name}")
-            except AttributeError:
-                pass
 
-        with open(ICS_FILE_PATH, 'w', encoding='utf-8') as f:
-            f.writelines(calendar_obj.serialize_iter())
-            
-        logger.info(f"Successfully saved calendar updates to {ICS_FILE_PATH}.")
+    Raises:
+        CalendarError: if the feed could not be serialized or written, so the
+            caller does not report a successful sync for an update that was lost.
+    """
+    # Get today's date
+    today = datetime.now().date()
+    
+    # ২ দিন আগের ডেট বের করা হলো
+    expiration_date = today - timedelta(days=2) 
+    
+    for event in list(calendar_obj.events):
+        event_start = getattr(event, "begin", None)
+        if event_start is None:
+            logger.warning(f"Keeping event without a start date (uid={event.uid}): {event.name}")
+            continue
+        
+        # যদি জবের ডেডলাইন আজকের তারিখ থেকে ২ দিন বা তার বেশি পুরানো হয়, তবেই ডিলিট হবে
+        if event_start.date() < expiration_date:
+            calendar_obj.events.remove(event)
+            logger.debug(f"Removed expired job event (older than 2 days): {event.name}")
+
+    try:
+        serialized = "".join(calendar_obj.serialize_iter())
     except Exception as e:
-        logger.exception(f"Failed to save calendar to {ICS_FILE_PATH}: {e}")
+        raise CalendarError(f"Failed to serialize the calendar: {e}") from e
+        
+    try:
+        _write_atomically(ICS_FILE_PATH, serialized)
+    except OSError as e:
+        raise CalendarError(f"Failed to write {ICS_FILE_PATH}: {e}") from e
+        
+    logger.info(f"Successfully saved calendar updates to {ICS_FILE_PATH}.")
 
 def create_job_event(job: Dict[str, Any], calendar_obj: Calendar) -> bool:
     """
@@ -113,10 +142,25 @@ def create_job_event(job: Dict[str, Any], calendar_obj: Calendar) -> bool:
     event.uid = f"teletalk-job-{job_primary_id}@job2calendar"
     
     # 5. Add to calendar
+    calendar_obj.events.add(event)
+    logger.info(f"Added event for job: {title} (ID: {job_primary_id}) on {event.begin}")
+    return True
+
+def _write_atomically(filepath: str, content: str) -> None:
+    """
+    Writes content to a temporary file in the same directory and renames it into
+    place, so a failed write can never leave a half-written feed for subscribers.
+    """
+    directory = os.path.dirname(os.path.abspath(filepath))
+    fd, tmp_path = tempfile.mkstemp(dir=directory, prefix=".tmp-", suffix=".ics")
+    
     try:
-        calendar_obj.events.add(event)
-        logger.info(f"Added event for job: {title} (ID: {job_primary_id}) on {event.begin}")
-        return True
-    except Exception as e:
-        logger.exception(f"Unexpected error adding event for job {job_primary_id}: {e}")
-        return False
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            f.write(content)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp_path, filepath)
+    except BaseException:
+        if os.path.exists(tmp_path):
+            os.unlink(tmp_path)
+        raise
