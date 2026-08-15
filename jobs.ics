@@ -9,12 +9,6 @@ SUMMARY:Office Assistant/ Upper Division Assistant (Vacancy: 06)
 UID:teletalk-job-14274@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260907
-DESCRIPTION:Organization: DC Office Rangamati (DCRANGAMATI)\nPublished: 2026-08-10\nDeadline: 2026-09-07\nApplication URL:\nhttps://dcrangamati.teletalk.com.bd/\n\nJob Primary ID: 14547
-SUMMARY:Office Shohayok (Vacancy: 07)
-UID:teletalk-job-14547@job2calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260816
 DESCRIPTION:Organization: Civil Aviation Authority\, Bangladesh (CAAB)\nPublished: 2026-07-27\nDeadline: 2026-08-16\nApplication URL:\nhttps://caab.teletalk.com.bd/caab_2026/\n\nJob Primary ID: 14426
 SUMMARY:Data Entry Operator (Vacancy: 02)
@@ -99,12 +93,6 @@ SUMMARY:Junior Auditor (Vacancy: 92)
 UID:teletalk-job-14533@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260820
-DESCRIPTION:Organization: জেলা প্রশাসকের কার্যালয় ঝিনাইদহ\nPublished: 2026-07-27\nDeadline: 2026-08-20\nApplication URL:\nhttps://dcjhenaidah.teletalk.com.bd/\n\nJob Primary ID: 14467
-SUMMARY:Office Shohayok (For general administration) (Vacancy: 02)
-UID:teletalk-job-14467@job2calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260823
 DESCRIPTION:Organization: মাদ্রাসা শিক্ষা অধিদপ্তর\nPublished: 2026-08-02\nDeadline: 2026-08-23\nApplication URL:\nhttps://dme.teletalk.com.bd/\n\nJob Primary ID: 14503
 SUMMARY:Office Assistant-Cum-Computer Typist (Vacancy: 13)
@@ -121,24 +109,6 @@ DTSTART;VALUE=DATE:20260816
 DESCRIPTION:Organization: Civil Aviation Authority\, Bangladesh (CAAB)\nPublished: 2026-07-27\nDeadline: 2026-08-16\nApplication URL:\nhttps://caab.teletalk.com.bd/caab_2026/\n\nJob Primary ID: 14403
 SUMMARY:Security Supervisor (Male) (Vacancy: 02)
 UID:teletalk-job-14403@job2calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260818
-DESCRIPTION:Organization: DC Office Tangail (DCTANGAIL)\nPublished: 2026-08-04\nDeadline: 2026-08-18\nApplication URL:\nhttp://dctangail.teletalk.com.bd/\n\nJob Primary ID: 14524
-SUMMARY:Office Assistant-Cum-Computer Typist (Vacancy: 26)
-UID:teletalk-job-14524@job2calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260902
-DESCRIPTION:Organization: DC Office Kurigram (DCKURIGRAM)\nPublished: 2026-08-04\nDeadline: 2026-09-02\nApplication URL:\nhttp://dckurigram.teletalk.com.bd/\n\nJob Primary ID: 14519
-SUMMARY:Office Assistant-Cum-Computer Typist (Vacancy: 20)
-UID:teletalk-job-14519@job2calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260907
-DESCRIPTION:Organization: DC Office Rangamati (DCRANGAMATI)\nPublished: 2026-08-10\nDeadline: 2026-09-07\nApplication URL:\nhttps://dcrangamati.teletalk.com.bd/\n\nJob Primary ID: 14545
-SUMMARY:Office Assistant-cum-Computer Typist (Vacancy: 06)
-UID:teletalk-job-14545@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260902
@@ -187,12 +157,6 @@ DTSTART;VALUE=DATE:20260825
 DESCRIPTION:Organization: বাংলাদেশ চা বোর্ড\nPublished: 2026-07-28\nDeadline: 2026-08-25\nApplication URL:\nhttps://bteab.teletalk.com.bd/\n\nJob Primary ID: 14478
 SUMMARY:Office Support Staff (Vacancy: 06)
 UID:teletalk-job-14478@job2calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260830
-DESCRIPTION:Organization: জেলা প্রশাসকের কার্যালয় ঝিনাইদহ\nPublished: 2026-08-10\nDeadline: 2026-08-30\nApplication URL:\nhttps://dcjhenaidah.teletalk.com.bd/\n\nJob Primary ID: 14540
-SUMMARY:Office Assistant cum-Computer Typist (Vacancy: 05)
-UID:teletalk-job-14540@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260910
