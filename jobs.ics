@@ -9,16 +9,16 @@ SUMMARY:Office Assistant/ Upper Division Assistant (Vacancy: 06)
 UID:teletalk-job-14274@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260816
-DESCRIPTION:Organization: Civil Aviation Authority\, Bangladesh (CAAB)\nPublished: 2026-07-27\nDeadline: 2026-08-16\nApplication URL:\nhttps://caab.teletalk.com.bd/caab_2026/\n\nJob Primary ID: 14426
-SUMMARY:Data Entry Operator (Vacancy: 02)
-UID:teletalk-job-14426@job2calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260907
 DESCRIPTION:Organization: DC Office Rangamati (DCRANGAMATI)\nPublished: 2026-08-10\nDeadline: 2026-09-07\nApplication URL:\nhttps://dcrangamati.teletalk.com.bd/\n\nJob Primary ID: 14547
 SUMMARY:Office Shohayok (Vacancy: 07)
 UID:teletalk-job-14547@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260816
+DESCRIPTION:Organization: Civil Aviation Authority\, Bangladesh (CAAB)\nPublished: 2026-07-27\nDeadline: 2026-08-16\nApplication URL:\nhttps://caab.teletalk.com.bd/caab_2026/\n\nJob Primary ID: 14426
+SUMMARY:Data Entry Operator (Vacancy: 02)
+UID:teletalk-job-14426@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260816
@@ -45,10 +45,10 @@ SUMMARY:Data Entry Control Operator (Vacancy: 04)
 UID:teletalk-job-14534@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260820
-DESCRIPTION:Organization: বাংলাদেশ পাট গবেষণা ইনস্টিটিউট (বিজেআরআই)\nPublished: 2026-07-21\nDeadline: 2026-08-20\nApplication URL:\nhttps://bjri.teletalk.com.bd/\n\nJob Primary ID: 14313
-SUMMARY:Upper Division Assistant(Permanent) (Vacancy: 03)
-UID:teletalk-job-14313@job2calendar
+DTSTART;VALUE=DATE:20260831
+DESCRIPTION:Organization: Public Works Department (PWD)\nPublished: 2026-08-02\nDeadline: 2026-08-31\nApplication URL:\nhttps://pwd.teletalk.com.bd/\n\nJob Primary ID: 14500
+SUMMARY:Office Assistant/M\,L\,S\,S (Vacancy: 123)
+UID:teletalk-job-14500@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260816
@@ -57,10 +57,10 @@ SUMMARY:Fire Supervisor (Vacancy: 04)
 UID:teletalk-job-14394@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260831
-DESCRIPTION:Organization: Public Works Department (PWD)\nPublished: 2026-08-02\nDeadline: 2026-08-31\nApplication URL:\nhttps://pwd.teletalk.com.bd/\n\nJob Primary ID: 14500
-SUMMARY:Office Assistant/M\,L\,S\,S (Vacancy: 123)
-UID:teletalk-job-14500@job2calendar
+DTSTART;VALUE=DATE:20260820
+DESCRIPTION:Organization: বাংলাদেশ পাট গবেষণা ইনস্টিটিউট (বিজেআরআই)\nPublished: 2026-07-21\nDeadline: 2026-08-20\nApplication URL:\nhttps://bjri.teletalk.com.bd/\n\nJob Primary ID: 14313
+SUMMARY:Upper Division Assistant(Permanent) (Vacancy: 03)
+UID:teletalk-job-14313@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260816
@@ -117,16 +117,16 @@ SUMMARY:Junior Field Assistant(Permanent) (Vacancy: 12)
 UID:teletalk-job-14312@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260818
-DESCRIPTION:Organization: DC Office Tangail (DCTANGAIL)\nPublished: 2026-08-04\nDeadline: 2026-08-18\nApplication URL:\nhttp://dctangail.teletalk.com.bd/\n\nJob Primary ID: 14524
-SUMMARY:Office Assistant-Cum-Computer Typist (Vacancy: 26)
-UID:teletalk-job-14524@job2calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260816
 DESCRIPTION:Organization: Civil Aviation Authority\, Bangladesh (CAAB)\nPublished: 2026-07-27\nDeadline: 2026-08-16\nApplication URL:\nhttps://caab.teletalk.com.bd/caab_2026/\n\nJob Primary ID: 14403
 SUMMARY:Security Supervisor (Male) (Vacancy: 02)
 UID:teletalk-job-14403@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260818
+DESCRIPTION:Organization: DC Office Tangail (DCTANGAIL)\nPublished: 2026-08-04\nDeadline: 2026-08-18\nApplication URL:\nhttp://dctangail.teletalk.com.bd/\n\nJob Primary ID: 14524
+SUMMARY:Office Assistant-Cum-Computer Typist (Vacancy: 26)
+UID:teletalk-job-14524@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260902
@@ -177,16 +177,16 @@ SUMMARY:Office Assistant Cum Computer Typist (Vacancy: 26)
 UID:teletalk-job-14553@job2calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260820
+DESCRIPTION:Organization: বাংলাদেশ পাট গবেষণা ইনস্টিটিউট (বিজেআরআই)\nPublished: 2026-07-21\nDeadline: 2026-08-20\nApplication URL:\nhttps://bjri.teletalk.com.bd/\n\nJob Primary ID: 14318
+SUMMARY:Office Support staff(Permanent) (Vacancy: 12)
+UID:teletalk-job-14318@job2calendar
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260825
 DESCRIPTION:Organization: বাংলাদেশ চা বোর্ড\nPublished: 2026-07-28\nDeadline: 2026-08-25\nApplication URL:\nhttps://bteab.teletalk.com.bd/\n\nJob Primary ID: 14478
 SUMMARY:Office Support Staff (Vacancy: 06)
 UID:teletalk-job-14478@job2calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260827
-DESCRIPTION:Organization: Office of the Controller General of Accounts (CGA)\nPublished: 2026-08-06\nDeadline: 2026-08-27\nApplication URL:\nhttps://cga.teletalk.com.bd/\n\nJob Primary ID: 14531
-SUMMARY:Auditor (Vacancy: 378)
-UID:teletalk-job-14531@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260830
@@ -195,22 +195,22 @@ SUMMARY:Office Assistant cum-Computer Typist (Vacancy: 05)
 UID:teletalk-job-14540@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260816
-DESCRIPTION:Organization: Civil Aviation Authority\, Bangladesh (CAAB)\nPublished: 2026-07-27\nDeadline: 2026-08-16\nApplication URL:\nhttps://caab.teletalk.com.bd/caab_2026/\n\nJob Primary ID: 14418
-SUMMARY:Field Assistant (Vacancy: 02)
-UID:teletalk-job-14418@job2calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260910
 DESCRIPTION:Organization: Office of The Commissioner of Taxes Taxes Zone-20\, Dhaka(TAX20)\nPublished: 2026-08-16\nDeadline: 2026-09-10\nApplication URL:\nhttps://tax20.teletalk.com.bd/\n\nJob Primary ID: 14565
 SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 09)
 UID:teletalk-job-14565@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260820
-DESCRIPTION:Organization: বাংলাদেশ পাট গবেষণা ইনস্টিটিউট (বিজেআরআই)\nPublished: 2026-07-21\nDeadline: 2026-08-20\nApplication URL:\nhttps://bjri.teletalk.com.bd/\n\nJob Primary ID: 14318
-SUMMARY:Office Support staff(Permanent) (Vacancy: 12)
-UID:teletalk-job-14318@job2calendar
+DTSTART;VALUE=DATE:20260816
+DESCRIPTION:Organization: Civil Aviation Authority\, Bangladesh (CAAB)\nPublished: 2026-07-27\nDeadline: 2026-08-16\nApplication URL:\nhttps://caab.teletalk.com.bd/caab_2026/\n\nJob Primary ID: 14418
+SUMMARY:Field Assistant (Vacancy: 02)
+UID:teletalk-job-14418@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260827
+DESCRIPTION:Organization: Office of the Controller General of Accounts (CGA)\nPublished: 2026-08-06\nDeadline: 2026-08-27\nApplication URL:\nhttps://cga.teletalk.com.bd/\n\nJob Primary ID: 14531
+SUMMARY:Auditor (Vacancy: 378)
+UID:teletalk-job-14531@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260830
