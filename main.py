@@ -119,6 +119,49 @@ def _should_skip(job: Dict[str, Any]) -> bool:
 
     return False
 
+def check_and_notify_deadlines(cal_obj) -> None:
+    """
+    Checks the calendar for jobs that have a deadline of today and sends a notification.
+    """
+    today = datetime.now().date()
+    deadline_jobs = []
+
+    for event in cal_obj.events:
+        try:
+            if event.begin.date() == today:
+                deadline_jobs.append(f"🔸 {event.name}")
+        except AttributeError:
+            continue
+
+    if not deadline_jobs:
+        return
+
+    token = os.environ.get("TELEGRAM_BOT_TOKEN")
+    chat_id = os.environ.get("TELEGRAM_CHAT_ID")
+
+    if not token or not chat_id:
+        logger.warning("Telegram credentials not found. Skipping deadline notification.")
+        return
+
+    header = f"⚠️ আজ {len(deadline_jobs)}টি জবের আবেদনের শেষ দিন!\n\n"
+    url = f"https://api.telegram.org/bot{token}/sendMessage"
+
+    # আপনার তৈরি করা _split_message এবং requests.Session() ব্যবহার করা হলো
+    with requests.Session() as session:
+        for chunk in _split_message(header, deadline_jobs):
+            payload = {
+                "chat_id": chat_id,
+                "text": chunk,
+                "disable_web_page_preview": True,
+            }
+            try:
+                response = session.post(url, json=payload, timeout=TELEGRAM_TIMEOUT)
+                response.raise_for_status()
+                logger.info("Deadline notification sent successfully.")
+            except Exception as e:
+                logger.error(f"Failed to send deadline notification: {e}")
+                return
+
 
 def main() -> None:
     logger.info("Starting Job2Calendar ICS sync process...")
@@ -190,6 +233,7 @@ def main() -> None:
 
     calendar_manager.save_calendar(cal_obj)
     storage.save_processed_jobs(PROCESSED_JOBS_FILE, processed_jobs)
+    check_and_notify_deadlines(cal_obj)
 
     logger.info(
         f"Sync complete: {added_count} Job added, "
