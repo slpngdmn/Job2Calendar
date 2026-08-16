@@ -192,8 +192,8 @@ def main() -> None:
     storage.save_processed_jobs(PROCESSED_JOBS_FILE, processed_jobs)
 
     logger.info(
-        f"Sync complete: {added_count} events added, "
-        f"{len(expired_ids)} expired removed, {len(unmatched_ids)} filtered out."
+        f"Sync complete: {added_count} Job added, "
+        f"{len(expired_ids)} expired job removed, {len(unmatched_ids)} filtered out."
     )
 
 
