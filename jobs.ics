@@ -9,10 +9,10 @@ SUMMARY:Office Assistant/ Upper Division Assistant (Vacancy: 06)
 UID:teletalk-job-14274@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260906
-DESCRIPTION:Organization: Department of Textiles (DOTR)\nPublished: 2026-08-16\nDeadline: 2026-09-06\nApplication URL:\nhttp://dotr.teletalk.com.bd/\n\nJob Primary ID: 14568
-SUMMARY:Upper Division Assistant (Vacancy: 09)
-UID:teletalk-job-14568@job2calendar
+DTSTART;VALUE=DATE:20260902
+DESCRIPTION:Organization: Bangladesh Institute of Nuclear Agriculture (BINA)\nPublished: 2026-08-03\nDeadline: 2026-09-02\nApplication URL:\nhttps://bina.teletalk.com.bd/\n\nJob Primary ID: 14513
+SUMMARY:Upper Division Assistant (Vacancy: 03)
+UID:teletalk-job-14513@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260823
@@ -21,10 +21,10 @@ SUMMARY:Data Entry Operator (Vacancy: 03)
 UID:teletalk-job-14286@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260902
-DESCRIPTION:Organization: Bangladesh Institute of Nuclear Agriculture (BINA)\nPublished: 2026-08-03\nDeadline: 2026-09-02\nApplication URL:\nhttps://bina.teletalk.com.bd/\n\nJob Primary ID: 14513
-SUMMARY:Upper Division Assistant (Vacancy: 03)
-UID:teletalk-job-14513@job2calendar
+DTSTART;VALUE=DATE:20260906
+DESCRIPTION:Organization: Department of Textiles (DOTR)\nPublished: 2026-08-16\nDeadline: 2026-09-06\nApplication URL:\nhttp://dotr.teletalk.com.bd/\n\nJob Primary ID: 14568
+SUMMARY:Upper Division Assistant (Vacancy: 09)
+UID:teletalk-job-14568@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260827
@@ -43,12 +43,6 @@ DTSTART;VALUE=DATE:20260831
 DESCRIPTION:Organization: Public Works Department (PWD)\nPublished: 2026-08-02\nDeadline: 2026-08-31\nApplication URL:\nhttps://pwd.teletalk.com.bd/\n\nJob Primary ID: 14500
 SUMMARY:Office Assistant/M\,L\,S\,S (Vacancy: 123)
 UID:teletalk-job-14500@job2calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260820
-DESCRIPTION:Organization: বাংলাদেশ পাট গবেষণা ইনস্টিটিউট (বিজেআরআই)\nPublished: 2026-07-21\nDeadline: 2026-08-20\nApplication URL:\nhttps://bjri.teletalk.com.bd/\n\nJob Primary ID: 14313
-SUMMARY:Upper Division Assistant(Permanent) (Vacancy: 03)
-UID:teletalk-job-14313@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260917
@@ -87,12 +81,6 @@ SUMMARY:Office Assistant-Cum-Computer Typist (Vacancy: 13)
 UID:teletalk-job-14503@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260820
-DESCRIPTION:Organization: বাংলাদেশ পাট গবেষণা ইনস্টিটিউট (বিজেআরআই)\nPublished: 2026-07-21\nDeadline: 2026-08-20\nApplication URL:\nhttps://bjri.teletalk.com.bd/\n\nJob Primary ID: 14312
-SUMMARY:Junior Field Assistant(Permanent) (Vacancy: 12)
-UID:teletalk-job-14312@job2calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260906
 DESCRIPTION:Organization: Department of Textiles (DOTR)\nPublished: 2026-08-16\nDeadline: 2026-09-06\nApplication URL:\nhttp://dotr.teletalk.com.bd/\n\nJob Primary ID: 14571
 SUMMARY:Accounting Assistant cum Cashier (Vacancy: 02)
@@ -129,16 +117,16 @@ SUMMARY:Office Assistant Cum Computer Typist (Vacancy: 26)
 UID:teletalk-job-14553@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260906
-DESCRIPTION:Organization: Department of Textiles (DOTR)\nPublished: 2026-08-16\nDeadline: 2026-09-06\nApplication URL:\nhttp://dotr.teletalk.com.bd/\n\nJob Primary ID: 14570
-SUMMARY:Office Assistant cum-Computer Typist (Vacancy: 20)
-UID:teletalk-job-14570@job2calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260825
 DESCRIPTION:Organization: বাংলাদেশ চা বোর্ড\nPublished: 2026-07-28\nDeadline: 2026-08-25\nApplication URL:\nhttps://bteab.teletalk.com.bd/\n\nJob Primary ID: 14478
 SUMMARY:Office Support Staff (Vacancy: 06)
 UID:teletalk-job-14478@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260906
+DESCRIPTION:Organization: Department of Textiles (DOTR)\nPublished: 2026-08-16\nDeadline: 2026-09-06\nApplication URL:\nhttp://dotr.teletalk.com.bd/\n\nJob Primary ID: 14570
+SUMMARY:Office Assistant cum-Computer Typist (Vacancy: 20)
+UID:teletalk-job-14570@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260827
@@ -151,12 +139,6 @@ DTSTART;VALUE=DATE:20260910
 DESCRIPTION:Organization: Office of The Commissioner of Taxes Taxes Zone-20\, Dhaka(TAX20)\nPublished: 2026-08-16\nDeadline: 2026-09-10\nApplication URL:\nhttps://tax20.teletalk.com.bd/\n\nJob Primary ID: 14565
 SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 09)
 UID:teletalk-job-14565@job2calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260820
-DESCRIPTION:Organization: বাংলাদেশ পাট গবেষণা ইনস্টিটিউট (বিজেআরআই)\nPublished: 2026-07-21\nDeadline: 2026-08-20\nApplication URL:\nhttps://bjri.teletalk.com.bd/\n\nJob Primary ID: 14318
-SUMMARY:Office Support staff(Permanent) (Vacancy: 12)
-UID:teletalk-job-14318@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260830
