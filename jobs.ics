@@ -9,10 +9,10 @@ SUMMARY:Office Assistant/ Upper Division Assistant (Vacancy: 06)
 UID:teletalk-job-14274@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260902
-DESCRIPTION:Organization: Bangladesh Institute of Nuclear Agriculture (BINA)\nPublished: 2026-08-03\nDeadline: 2026-09-02\nApplication URL:\nhttps://bina.teletalk.com.bd/\n\nJob Primary ID: 14513
-SUMMARY:Upper Division Assistant (Vacancy: 03)
-UID:teletalk-job-14513@job2calendar
+DTSTART;VALUE=DATE:20260906
+DESCRIPTION:Organization: Department of Textiles (DOTR)\nPublished: 2026-08-16\nDeadline: 2026-09-06\nApplication URL:\nhttp://dotr.teletalk.com.bd/\n\nJob Primary ID: 14568
+SUMMARY:Upper Division Assistant (Vacancy: 09)
+UID:teletalk-job-14568@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260823
@@ -21,10 +21,10 @@ SUMMARY:Data Entry Operator (Vacancy: 03)
 UID:teletalk-job-14286@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260906
-DESCRIPTION:Organization: Department of Textiles (DOTR)\nPublished: 2026-08-16\nDeadline: 2026-09-06\nApplication URL:\nhttp://dotr.teletalk.com.bd/\n\nJob Primary ID: 14568
-SUMMARY:Upper Division Assistant (Vacancy: 09)
-UID:teletalk-job-14568@job2calendar
+DTSTART;VALUE=DATE:20260902
+DESCRIPTION:Organization: Bangladesh Institute of Nuclear Agriculture (BINA)\nPublished: 2026-08-03\nDeadline: 2026-09-02\nApplication URL:\nhttps://bina.teletalk.com.bd/\n\nJob Primary ID: 14513
+SUMMARY:Upper Division Assistant (Vacancy: 03)
+UID:teletalk-job-14513@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260827
@@ -43,12 +43,6 @@ DTSTART;VALUE=DATE:20260831
 DESCRIPTION:Organization: Public Works Department (PWD)\nPublished: 2026-08-02\nDeadline: 2026-08-31\nApplication URL:\nhttps://pwd.teletalk.com.bd/\n\nJob Primary ID: 14500
 SUMMARY:Office Assistant/M\,L\,S\,S (Vacancy: 123)
 UID:teletalk-job-14500@job2calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260917
-DESCRIPTION:Organization: Office of the Superintendent of Police\, Kishoreganj(PKISP)\nPublished: 2026-08-20\nDeadline: 2026-09-17\nApplication URL:\nhttps://policekishoreganj.teletalk.com.bd/\n\nJob Primary ID: 14586
-SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 02)
-UID:teletalk-job-14586@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260823
@@ -87,6 +81,12 @@ SUMMARY:Accounting Assistant cum Cashier (Vacancy: 02)
 UID:teletalk-job-14571@job2calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260830
+DESCRIPTION:Organization: Fisheries and Livestock Information Department (FLID)\nPublished: 2026-07-30\nDeadline: 2026-08-30\nApplication URL:\nhttps://flid.teletalk.com.bd/\n\nJob Primary ID: 14491
+SUMMARY:Office Support Staff (Vacancy: 10)
+UID:teletalk-job-14491@job2calendar
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260902
 DESCRIPTION:Organization: Bangladesh Institute of Nuclear Agriculture (BINA)\nPublished: 2026-08-03\nDeadline: 2026-09-02\nApplication URL:\nhttps://bina.teletalk.com.bd/\n\nJob Primary ID: 14515
 SUMMARY:Data Entry Operator (Vacancy: 02)
@@ -117,22 +117,16 @@ SUMMARY:Office Assistant Cum Computer Typist (Vacancy: 26)
 UID:teletalk-job-14553@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260825
-DESCRIPTION:Organization: বাংলাদেশ চা বোর্ড\nPublished: 2026-07-28\nDeadline: 2026-08-25\nApplication URL:\nhttps://bteab.teletalk.com.bd/\n\nJob Primary ID: 14478
-SUMMARY:Office Support Staff (Vacancy: 06)
-UID:teletalk-job-14478@job2calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260906
 DESCRIPTION:Organization: Department of Textiles (DOTR)\nPublished: 2026-08-16\nDeadline: 2026-09-06\nApplication URL:\nhttp://dotr.teletalk.com.bd/\n\nJob Primary ID: 14570
 SUMMARY:Office Assistant cum-Computer Typist (Vacancy: 20)
 UID:teletalk-job-14570@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260827
-DESCRIPTION:Organization: Office of the Controller General of Accounts (CGA)\nPublished: 2026-08-06\nDeadline: 2026-08-27\nApplication URL:\nhttps://cga.teletalk.com.bd/\n\nJob Primary ID: 14531
-SUMMARY:Auditor (Vacancy: 378)
-UID:teletalk-job-14531@job2calendar
+DTSTART;VALUE=DATE:20260825
+DESCRIPTION:Organization: বাংলাদেশ চা বোর্ড\nPublished: 2026-07-28\nDeadline: 2026-08-25\nApplication URL:\nhttps://bteab.teletalk.com.bd/\n\nJob Primary ID: 14478
+SUMMARY:Office Support Staff (Vacancy: 06)
+UID:teletalk-job-14478@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260910
@@ -141,10 +135,16 @@ SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 09)
 UID:teletalk-job-14565@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260830
-DESCRIPTION:Organization: Fisheries and Livestock Information Department (FLID)\nPublished: 2026-07-30\nDeadline: 2026-08-30\nApplication URL:\nhttps://flid.teletalk.com.bd/\n\nJob Primary ID: 14491
-SUMMARY:Office Support Staff (Vacancy: 10)
-UID:teletalk-job-14491@job2calendar
+DTSTART;VALUE=DATE:20260827
+DESCRIPTION:Organization: Office of the Controller General of Accounts (CGA)\nPublished: 2026-08-06\nDeadline: 2026-08-27\nApplication URL:\nhttps://cga.teletalk.com.bd/\n\nJob Primary ID: 14531
+SUMMARY:Auditor (Vacancy: 378)
+UID:teletalk-job-14531@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260917
+DESCRIPTION:Organization: Office of the Superintendent of Police\, Kishoreganj(PKISP)\nPublished: 2026-08-20\nDeadline: 2026-09-17\nApplication URL:\nhttps://policekishoreganj.teletalk.com.bd/\n\nJob Primary ID: 14586
+SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 02)
+UID:teletalk-job-14586@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260903
