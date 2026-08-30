@@ -3,10 +3,10 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 CALSCALE:GEORGIAN
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260902
-DESCRIPTION:Organization: Bangladesh Institute of Nuclear Agriculture (BINA)\nPublished: 2026-08-03\nDeadline: 2026-09-02\nApplication URL:\nhttps://bina.teletalk.com.bd/\n\nJob Primary ID: 14513
-SUMMARY:Upper Division Assistant (Vacancy: 03)
-UID:teletalk-job-14513@job2calendar
+DTSTART;VALUE=DATE:20260927
+DESCRIPTION:Organization: Office of the Divisional  Commissioner\, Dhaka Division\, Dhaka(DHAKADIV)\nPublished: 2026-08-30\nDeadline: 2026-09-27\nApplication URL:\nhttps://dhakadiv.teletalk.com.bd/\n\nJob Primary ID: 14622
+SUMMARY:Data Entry/Control Operator (Vacancy: 02)
+UID:teletalk-job-14622@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260906
@@ -15,10 +15,22 @@ SUMMARY:Upper Division Assistant (Vacancy: 09)
 UID:teletalk-job-14568@job2calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260902
+DESCRIPTION:Organization: Bangladesh Institute of Nuclear Agriculture (BINA)\nPublished: 2026-08-03\nDeadline: 2026-09-02\nApplication URL:\nhttps://bina.teletalk.com.bd/\n\nJob Primary ID: 14513
+SUMMARY:Upper Division Assistant (Vacancy: 03)
+UID:teletalk-job-14513@job2calendar
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260919
 DESCRIPTION:Organization: Land Reforms Board(LRB)\nPublished: 2026-08-20\nDeadline: 2026-09-19\nApplication URL:\nhttps://lrb.teletalk.com.bd/\n\nJob Primary ID: 14589
 SUMMARY:Office Support Staff (Vacancy: 02)
 UID:teletalk-job-14589@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260927
+DESCRIPTION:Organization: Office of the Divisional  Commissioner\, Dhaka Division\, Dhaka(DHAKADIV)\nPublished: 2026-08-30\nDeadline: 2026-09-27\nApplication URL:\nhttps://dhakadiv.teletalk.com.bd/\n\nJob Primary ID: 14621
+SUMMARY:Office Assistant-Cum-Computer Typist (Vacancy: 06)
+UID:teletalk-job-14621@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260831
@@ -33,16 +45,16 @@ SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 13)
 UID:teletalk-job-14616@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260917
-DESCRIPTION:Organization: Office of the Superintendent of Police\, Kishoreganj(PKISP)\nPublished: 2026-08-20\nDeadline: 2026-09-17\nApplication URL:\nhttps://policekishoreganj.teletalk.com.bd/\n\nJob Primary ID: 14586
-SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 02)
-UID:teletalk-job-14586@job2calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260910
 DESCRIPTION:Organization: Office of The Commissioner of Taxes Taxes Zone-20\, Dhaka(TAX20)\nPublished: 2026-08-16\nDeadline: 2026-09-10\nApplication URL:\nhttps://tax20.teletalk.com.bd/\n\nJob Primary ID: 14563
 SUMMARY:Upper Division Assistant (Vacancy: 06)
 UID:teletalk-job-14563@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260927
+DESCRIPTION:Organization: Office of the Divisional  Commissioner\, Dhaka Division\, Dhaka(DHAKADIV)\nPublished: 2026-08-30\nDeadline: 2026-09-27\nApplication URL:\nhttps://dhakadiv.teletalk.com.bd/\n\nJob Primary ID: 14624
+SUMMARY:Office Support Staff (Vacancy: 06)
+UID:teletalk-job-14624@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260918
@@ -57,6 +69,12 @@ SUMMARY:Accounting Assistant cum Cashier (Vacancy: 02)
 UID:teletalk-job-14571@job2calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260830
+DESCRIPTION:Organization: Fisheries and Livestock Information Department (FLID)\nPublished: 2026-07-30\nDeadline: 2026-08-30\nApplication URL:\nhttps://flid.teletalk.com.bd/\n\nJob Primary ID: 14491
+SUMMARY:Office Support Staff (Vacancy: 10)
+UID:teletalk-job-14491@job2calendar
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260902
 DESCRIPTION:Organization: Bangladesh Institute of Nuclear Agriculture (BINA)\nPublished: 2026-08-03\nDeadline: 2026-09-02\nApplication URL:\nhttps://bina.teletalk.com.bd/\n\nJob Primary ID: 14515
 SUMMARY:Data Entry Operator (Vacancy: 02)
@@ -67,6 +85,12 @@ DTSTART;VALUE=DATE:20260910
 DESCRIPTION:Organization: Office of The Commissioner of Taxes Taxes Zone-20\, Dhaka(TAX20)\nPublished: 2026-08-16\nDeadline: 2026-09-10\nApplication URL:\nhttps://tax20.teletalk.com.bd/\n\nJob Primary ID: 14566
 SUMMARY:Office Sohayok (Vacancy: 09)
 UID:teletalk-job-14566@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260930
+DESCRIPTION:Organization: Habiganj District (DCHABIGANJ)\nPublished: 2026-09-01\nDeadline: 2026-09-30\nApplication URL:\nhttp://dchabiganj.teletalk.com.bd/\n\nJob Primary ID: 14627
+SUMMARY:Office Support Staff (Vacancy: 04)
+UID:teletalk-job-14627@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260903
@@ -93,10 +117,10 @@ SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 09)
 UID:teletalk-job-14565@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260830
-DESCRIPTION:Organization: Fisheries and Livestock Information Department (FLID)\nPublished: 2026-07-30\nDeadline: 2026-08-30\nApplication URL:\nhttps://flid.teletalk.com.bd/\n\nJob Primary ID: 14491
-SUMMARY:Office Support Staff (Vacancy: 10)
-UID:teletalk-job-14491@job2calendar
+DTSTART;VALUE=DATE:20260917
+DESCRIPTION:Organization: Office of the Superintendent of Police\, Kishoreganj(PKISP)\nPublished: 2026-08-20\nDeadline: 2026-09-17\nApplication URL:\nhttps://policekishoreganj.teletalk.com.bd/\n\nJob Primary ID: 14586
+SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 02)
+UID:teletalk-job-14586@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260903
