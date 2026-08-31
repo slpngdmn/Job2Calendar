@@ -9,16 +9,22 @@ SUMMARY:Data Entry/Control Operator (Vacancy: 02)
 UID:teletalk-job-14622@job2calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260902
+DESCRIPTION:Organization: Bangladesh Institute of Nuclear Agriculture (BINA)\nPublished: 2026-08-03\nDeadline: 2026-09-02\nApplication URL:\nhttps://bina.teletalk.com.bd/\n\nJob Primary ID: 14513
+SUMMARY:Upper Division Assistant (Vacancy: 03)
+UID:teletalk-job-14513@job2calendar
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260906
 DESCRIPTION:Organization: Department of Textiles (DOTR)\nPublished: 2026-08-16\nDeadline: 2026-09-06\nApplication URL:\nhttp://dotr.teletalk.com.bd/\n\nJob Primary ID: 14568
 SUMMARY:Upper Division Assistant (Vacancy: 09)
 UID:teletalk-job-14568@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260902
-DESCRIPTION:Organization: Bangladesh Institute of Nuclear Agriculture (BINA)\nPublished: 2026-08-03\nDeadline: 2026-09-02\nApplication URL:\nhttps://bina.teletalk.com.bd/\n\nJob Primary ID: 14513
-SUMMARY:Upper Division Assistant (Vacancy: 03)
-UID:teletalk-job-14513@job2calendar
+DTSTART;VALUE=DATE:20260927
+DESCRIPTION:Organization: Technical and Madrasah Education Division (TMED)\nPublished: 2026-08-31\nDeadline: 2026-09-27\nApplication URL:\nhttps://tmed.teletalk.com.bd/tmed_2026/\n\nJob Primary ID: 14634
+SUMMARY:Office Support Staff (Vacancy: 13)
+UID:teletalk-job-14634@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260919
@@ -45,6 +51,18 @@ SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 13)
 UID:teletalk-job-14616@job2calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260917
+DESCRIPTION:Organization: Office of the Superintendent of Police\, Kishoreganj(PKISP)\nPublished: 2026-08-20\nDeadline: 2026-09-17\nApplication URL:\nhttps://policekishoreganj.teletalk.com.bd/\n\nJob Primary ID: 14586
+SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 02)
+UID:teletalk-job-14586@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260927
+DESCRIPTION:Organization: Technical and Madrasah Education Division (TMED)\nPublished: 2026-08-31\nDeadline: 2026-09-27\nApplication URL:\nhttps://tmed.teletalk.com.bd/tmed_2026/\n\nJob Primary ID: 14633
+SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 06)
+UID:teletalk-job-14633@job2calendar
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260910
 DESCRIPTION:Organization: Office of The Commissioner of Taxes Taxes Zone-20\, Dhaka(TAX20)\nPublished: 2026-08-16\nDeadline: 2026-09-10\nApplication URL:\nhttps://tax20.teletalk.com.bd/\n\nJob Primary ID: 14563
 SUMMARY:Upper Division Assistant (Vacancy: 06)
@@ -67,12 +85,6 @@ DTSTART;VALUE=DATE:20260906
 DESCRIPTION:Organization: Department of Textiles (DOTR)\nPublished: 2026-08-16\nDeadline: 2026-09-06\nApplication URL:\nhttp://dotr.teletalk.com.bd/\n\nJob Primary ID: 14571
 SUMMARY:Accounting Assistant cum Cashier (Vacancy: 02)
 UID:teletalk-job-14571@job2calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260830
-DESCRIPTION:Organization: Fisheries and Livestock Information Department (FLID)\nPublished: 2026-07-30\nDeadline: 2026-08-30\nApplication URL:\nhttps://flid.teletalk.com.bd/\n\nJob Primary ID: 14491
-SUMMARY:Office Support Staff (Vacancy: 10)
-UID:teletalk-job-14491@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260902
@@ -115,12 +127,6 @@ DTSTART;VALUE=DATE:20260910
 DESCRIPTION:Organization: Office of The Commissioner of Taxes Taxes Zone-20\, Dhaka(TAX20)\nPublished: 2026-08-16\nDeadline: 2026-09-10\nApplication URL:\nhttps://tax20.teletalk.com.bd/\n\nJob Primary ID: 14565
 SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 09)
 UID:teletalk-job-14565@job2calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260917
-DESCRIPTION:Organization: Office of the Superintendent of Police\, Kishoreganj(PKISP)\nPublished: 2026-08-20\nDeadline: 2026-09-17\nApplication URL:\nhttps://policekishoreganj.teletalk.com.bd/\n\nJob Primary ID: 14586
-SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 02)
-UID:teletalk-job-14586@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260903
