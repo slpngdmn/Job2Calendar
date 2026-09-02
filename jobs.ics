@@ -9,10 +9,10 @@ SUMMARY:Data Entry/Control Operator (Vacancy: 02)
 UID:teletalk-job-14622@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260927
-DESCRIPTION:Organization: Technical and Madrasah Education Division (TMED)\nPublished: 2026-08-31\nDeadline: 2026-09-27\nApplication URL:\nhttps://tmed.teletalk.com.bd/tmed_2026/\n\nJob Primary ID: 14634
-SUMMARY:Office Support Staff (Vacancy: 13)
-UID:teletalk-job-14634@job2calendar
+DTSTART;VALUE=DATE:20260902
+DESCRIPTION:Organization: Bangladesh Institute of Nuclear Agriculture (BINA)\nPublished: 2026-08-03\nDeadline: 2026-09-02\nApplication URL:\nhttps://bina.teletalk.com.bd/\n\nJob Primary ID: 14513
+SUMMARY:Upper Division Assistant (Vacancy: 03)
+UID:teletalk-job-14513@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260906
@@ -21,10 +21,10 @@ SUMMARY:Upper Division Assistant (Vacancy: 09)
 UID:teletalk-job-14568@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260902
-DESCRIPTION:Organization: Bangladesh Institute of Nuclear Agriculture (BINA)\nPublished: 2026-08-03\nDeadline: 2026-09-02\nApplication URL:\nhttps://bina.teletalk.com.bd/\n\nJob Primary ID: 14513
-SUMMARY:Upper Division Assistant (Vacancy: 03)
-UID:teletalk-job-14513@job2calendar
+DTSTART;VALUE=DATE:20260927
+DESCRIPTION:Organization: Technical and Madrasah Education Division (TMED)\nPublished: 2026-08-31\nDeadline: 2026-09-27\nApplication URL:\nhttps://tmed.teletalk.com.bd/tmed_2026/\n\nJob Primary ID: 14634
+SUMMARY:Office Support Staff (Vacancy: 13)
+UID:teletalk-job-14634@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260919
