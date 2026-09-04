@@ -3,22 +3,16 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 CALSCALE:GEORGIAN
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260927
-DESCRIPTION:Organization: Office of the Divisional  Commissioner\, Dhaka Division\, Dhaka(DHAKADIV)\nPublished: 2026-08-30\nDeadline: 2026-09-27\nApplication URL:\nhttps://dhakadiv.teletalk.com.bd/\n\nJob Primary ID: 14622
-SUMMARY:Data Entry/Control Operator (Vacancy: 02)
-UID:teletalk-job-14622@job2calendar
+DTSTART;VALUE=DATE:20260906
+DESCRIPTION:Organization: Department of Textiles (DOTR)\nPublished: 2026-08-16\nDeadline: 2026-09-06\nApplication URL:\nhttp://dotr.teletalk.com.bd/\n\nJob Primary ID: 14568
+SUMMARY:Upper Division Assistant (Vacancy: 09)
+UID:teletalk-job-14568@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260927
 DESCRIPTION:Organization: Technical and Madrasah Education Division (TMED)\nPublished: 2026-08-31\nDeadline: 2026-09-27\nApplication URL:\nhttps://tmed.teletalk.com.bd/tmed_2026/\n\nJob Primary ID: 14634
 SUMMARY:Office Support Staff (Vacancy: 13)
 UID:teletalk-job-14634@job2calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260906
-DESCRIPTION:Organization: Department of Textiles (DOTR)\nPublished: 2026-08-16\nDeadline: 2026-09-06\nApplication URL:\nhttp://dotr.teletalk.com.bd/\n\nJob Primary ID: 14568
-SUMMARY:Upper Division Assistant (Vacancy: 09)
-UID:teletalk-job-14568@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260919
@@ -81,12 +75,6 @@ SUMMARY:Office Support Staff (Vacancy: 04)
 UID:teletalk-job-14627@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260903
-DESCRIPTION:Organization: বাংলাদেশ মাদ্রাসা শিক্ষা বোর্ড\nPublished: 2026-08-11\nDeadline: 2026-09-03\nApplication URL:\nhttps://bmeb.teletalk.com.bd/\n\nJob Primary ID: 14553
-SUMMARY:Office Assistant Cum Computer Typist (Vacancy: 26)
-UID:teletalk-job-14553@job2calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260918
 DESCRIPTION:Organization: Taxes Zone-2\, Chattogram.(CTAX2)\nPublished: 2026-08-27\nDeadline: 2026-09-18\nApplication URL:\nhttps://ctax2.teletalk.com.bd/\n\nJob Primary ID: 14614
 SUMMARY:Upper Division Assistant (Vacancy: 09)
@@ -111,9 +99,9 @@ SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 02)
 UID:teletalk-job-14586@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260903
-DESCRIPTION:Organization: বাংলাদেশ মাদ্রাসা শিক্ষা বোর্ড\nPublished: 2026-08-11\nDeadline: 2026-09-03\nApplication URL:\nhttps://bmeb.teletalk.com.bd/\n\nJob Primary ID: 14556
-SUMMARY:Office Support Staff (Vacancy: 17)
-UID:teletalk-job-14556@job2calendar
+DTSTART;VALUE=DATE:20260927
+DESCRIPTION:Organization: Office of the Divisional  Commissioner\, Dhaka Division\, Dhaka(DHAKADIV)\nPublished: 2026-08-30\nDeadline: 2026-09-27\nApplication URL:\nhttps://dhakadiv.teletalk.com.bd/\n\nJob Primary ID: 14622
+SUMMARY:Data Entry/Control Operator (Vacancy: 02)
+UID:teletalk-job-14622@job2calendar
 END:VEVENT
 END:VCALENDAR
