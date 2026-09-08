@@ -93,6 +93,12 @@ SUMMARY:Office Support Staff (Vacancy: 06)
 UID:teletalk-job-14624@job2calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261006
+DESCRIPTION:Organization: Bangladesh Ordnance Factories (BOF)\nPublished: 2026-09-08\nDeadline: 2026-10-06\nApplication URL:\nhttps://bof.teletalk.com.bd/\n\nJob Primary ID: 14678
+SUMMARY:Office Assistant Cum Computer Typist (Vacancy: 08)
+UID:teletalk-job-14678@job2calendar
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260927
 DESCRIPTION:Organization: Office of the Divisional  Commissioner\, Dhaka Division\, Dhaka(DHAKADIV)\nPublished: 2026-08-30\nDeadline: 2026-09-27\nApplication URL:\nhttps://dhakadiv.teletalk.com.bd/\n\nJob Primary ID: 14622
 SUMMARY:Data Entry/Control Operator (Vacancy: 02)
