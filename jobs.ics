@@ -27,10 +27,10 @@ SUMMARY:Office Support Staff (Vacancy: 02)
 UID:teletalk-job-14706@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260929
-DESCRIPTION:Organization: Bangladesh Forest Industries Development Corporation. (BFIDC)\nPublished: 2026-09-09\nDeadline: 2026-09-29\nApplication URL:\nhttps://bfidc.teletalk.com.bd/bfidc_2024_2026/\n\nJob Primary ID: 14666
-SUMMARY:Upper Division Assistant (Accounts) (Vacancy: 15)
-UID:teletalk-job-14666@job2calendar
+DTSTART;VALUE=DATE:20261005
+DESCRIPTION:Organization: Bangladesh Ship Recycling Board(BSRB)\nPublished: 2026-09-10\nDeadline: 2026-10-05\nApplication URL:\nhttps://bsrb.teletalk.com.bd/\n\nJob Primary ID: 14705
+SUMMARY:Office Assistant cum-Computer Typist (Vacancy: 02)
+UID:teletalk-job-14705@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260929
@@ -39,10 +39,10 @@ SUMMARY:Upper Division Assistant (Administration) (Vacancy: 14)
 UID:teletalk-job-14665@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261005
-DESCRIPTION:Organization: Bangladesh Ship Recycling Board(BSRB)\nPublished: 2026-09-10\nDeadline: 2026-10-05\nApplication URL:\nhttps://bsrb.teletalk.com.bd/\n\nJob Primary ID: 14705
-SUMMARY:Office Assistant cum-Computer Typist (Vacancy: 02)
-UID:teletalk-job-14705@job2calendar
+DTSTART;VALUE=DATE:20260929
+DESCRIPTION:Organization: Bangladesh Forest Industries Development Corporation. (BFIDC)\nPublished: 2026-09-09\nDeadline: 2026-09-29\nApplication URL:\nhttps://bfidc.teletalk.com.bd/bfidc_2024_2026/\n\nJob Primary ID: 14666
+SUMMARY:Upper Division Assistant (Accounts) (Vacancy: 15)
+UID:teletalk-job-14666@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260927
