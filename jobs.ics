@@ -3,6 +3,18 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 CALSCALE:GEORGIAN
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261007
+DESCRIPTION:Organization: Customs\, Excise and VAT Commissionerate\, Mymensingh(CEVMYM)\nPublished: 2026-09-17\nDeadline: 2026-10-07\nApplication URL:\nhttps://cevmym.teletalk.com.bd/\n\nJob Primary ID: 14738
+SUMMARY:Data Entry Operator (Vacancy: 02)
+UID:teletalk-job-14738@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261011
+DESCRIPTION:Organization: Deputy Commissioner's Office Naogaon (DCNAOGAON)\nPublished: 2026-09-21\nDeadline: 2026-10-11\nApplication URL:\nhttp://dcnaogaon.teletalk.com.bd/\n\nJob Primary ID: 14729
+SUMMARY:Office Support Staff (Vacancy: 10)
+UID:teletalk-job-14729@job2calendar
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260927
 DESCRIPTION:Organization: Technical and Madrasah Education Division (TMED)\nPublished: 2026-08-31\nDeadline: 2026-09-27\nApplication URL:\nhttps://tmed.teletalk.com.bd/tmed_2026/\n\nJob Primary ID: 14634
 SUMMARY:Office Support Staff (Vacancy: 13)
@@ -27,6 +39,12 @@ SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 13)
 UID:teletalk-job-14616@job2calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261007
+DESCRIPTION:Organization: Customs\, Excise and VAT Commissionerate\, Mymensingh(CEVMYM)\nPublished: 2026-09-17\nDeadline: 2026-10-07\nApplication URL:\nhttps://cevmym.teletalk.com.bd/\n\nJob Primary ID: 14737
+SUMMARY:Upper Division Assistant (Vacancy: 05)
+UID:teletalk-job-14737@job2calendar
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260927
 DESCRIPTION:Organization: Technical and Madrasah Education Division (TMED)\nPublished: 2026-08-31\nDeadline: 2026-09-27\nApplication URL:\nhttps://tmed.teletalk.com.bd/tmed_2026/\n\nJob Primary ID: 14633
 SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 06)
@@ -45,16 +63,22 @@ SUMMARY:Office Assistant cum Computer Typist (Vacancy: 08)
 UID:teletalk-job-14715@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261014
-DESCRIPTION:Organization: Magura District (DCMAGURA)\nPublished: 2026-09-15\nDeadline: 2026-10-14\nApplication URL:\nhttps://dcmagura.teletalk.com.bd/\n\nJob Primary ID: 14711
-SUMMARY:Office Assistant cum Computer Typist (Vacancy: 03)
-UID:teletalk-job-14711@job2calendar
+DTSTART;VALUE=DATE:20261007
+DESCRIPTION:Organization: Customs\, Excise and VAT Commissionerate\, Mymensingh(CEVMYM)\nPublished: 2026-09-17\nDeadline: 2026-10-07\nApplication URL:\nhttps://cevmym.teletalk.com.bd/\n\nJob Primary ID: 14741
+SUMMARY:Office Support Staff (Vacancy: 07)
+UID:teletalk-job-14741@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260918
 DESCRIPTION:Organization: Taxes Zone-2\, Chattogram.(CTAX2)\nPublished: 2026-08-27\nDeadline: 2026-09-18\nApplication URL:\nhttps://ctax2.teletalk.com.bd/\n\nJob Primary ID: 14619
 SUMMARY:Office Sohayok (Vacancy: 09)
 UID:teletalk-job-14619@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261014
+DESCRIPTION:Organization: Magura District (DCMAGURA)\nPublished: 2026-09-15\nDeadline: 2026-10-14\nApplication URL:\nhttps://dcmagura.teletalk.com.bd/\n\nJob Primary ID: 14711
+SUMMARY:Office Assistant cum Computer Typist (Vacancy: 03)
+UID:teletalk-job-14711@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261005
@@ -85,6 +109,12 @@ DTSTART;VALUE=DATE:20261006
 DESCRIPTION:Organization: Bangladesh Ordnance Factories (BOF)\nPublished: 2026-09-08\nDeadline: 2026-10-06\nApplication URL:\nhttps://bof.teletalk.com.bd/\n\nJob Primary ID: 14678
 SUMMARY:Office Assistant Cum Computer Typist (Vacancy: 08)
 UID:teletalk-job-14678@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261007
+DESCRIPTION:Organization: Customs\, Excise and VAT Commissionerate\, Mymensingh(CEVMYM)\nPublished: 2026-09-17\nDeadline: 2026-10-07\nApplication URL:\nhttps://cevmym.teletalk.com.bd/\n\nJob Primary ID: 14739
+SUMMARY:Office Assistant- Cum- Computer Typist (Vacancy: 06)
+UID:teletalk-job-14739@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260918
