@@ -27,22 +27,28 @@ SUMMARY:Office Support Staff (Vacancy: 02)
 UID:teletalk-job-14589@job2calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261010
+DESCRIPTION:Organization: Taxes Zone-16\, Dhaka(TAX16)\nPublished: 2026-09-19\nDeadline: 2026-10-10\nApplication URL:\nhttps://tax16.teletalk.com.bd/tax16_2026/\n\nJob Primary ID: 14746
+SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 05)
+UID:teletalk-job-14746@job2calendar
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260927
 DESCRIPTION:Organization: Office of the Divisional  Commissioner\, Dhaka Division\, Dhaka(DHAKADIV)\nPublished: 2026-08-30\nDeadline: 2026-09-27\nApplication URL:\nhttps://dhakadiv.teletalk.com.bd/\n\nJob Primary ID: 14621
 SUMMARY:Office Assistant-Cum-Computer Typist (Vacancy: 06)
 UID:teletalk-job-14621@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260918
-DESCRIPTION:Organization: Taxes Zone-2\, Chattogram.(CTAX2)\nPublished: 2026-08-27\nDeadline: 2026-09-18\nApplication URL:\nhttps://ctax2.teletalk.com.bd/\n\nJob Primary ID: 14616
-SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 13)
-UID:teletalk-job-14616@job2calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261007
 DESCRIPTION:Organization: Customs\, Excise and VAT Commissionerate\, Mymensingh(CEVMYM)\nPublished: 2026-09-17\nDeadline: 2026-10-07\nApplication URL:\nhttps://cevmym.teletalk.com.bd/\n\nJob Primary ID: 14737
 SUMMARY:Upper Division Assistant (Vacancy: 05)
 UID:teletalk-job-14737@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260918
+DESCRIPTION:Organization: Taxes Zone-2\, Chattogram.(CTAX2)\nPublished: 2026-08-27\nDeadline: 2026-09-18\nApplication URL:\nhttps://ctax2.teletalk.com.bd/\n\nJob Primary ID: 14616
+SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 13)
+UID:teletalk-job-14616@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260927
@@ -57,28 +63,28 @@ SUMMARY:Office Support Staff (Vacancy: 06)
 UID:teletalk-job-14624@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261006
-DESCRIPTION:Organization: Divisional Commissioner Office\, Mymensingh(MYMENSINGHDIV)\nPublished: 2026-09-15\nDeadline: 2026-10-06\nApplication URL:\nhttp://mymensinghdiv.teletalk.com.bd/\n\nJob Primary ID: 14715
-SUMMARY:Office Assistant cum Computer Typist (Vacancy: 08)
-UID:teletalk-job-14715@job2calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261007
 DESCRIPTION:Organization: Customs\, Excise and VAT Commissionerate\, Mymensingh(CEVMYM)\nPublished: 2026-09-17\nDeadline: 2026-10-07\nApplication URL:\nhttps://cevmym.teletalk.com.bd/\n\nJob Primary ID: 14741
 SUMMARY:Office Support Staff (Vacancy: 07)
 UID:teletalk-job-14741@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260918
-DESCRIPTION:Organization: Taxes Zone-2\, Chattogram.(CTAX2)\nPublished: 2026-08-27\nDeadline: 2026-09-18\nApplication URL:\nhttps://ctax2.teletalk.com.bd/\n\nJob Primary ID: 14619
-SUMMARY:Office Sohayok (Vacancy: 09)
-UID:teletalk-job-14619@job2calendar
+DTSTART;VALUE=DATE:20261006
+DESCRIPTION:Organization: Divisional Commissioner Office\, Mymensingh(MYMENSINGHDIV)\nPublished: 2026-09-15\nDeadline: 2026-10-06\nApplication URL:\nhttp://mymensinghdiv.teletalk.com.bd/\n\nJob Primary ID: 14715
+SUMMARY:Office Assistant cum Computer Typist (Vacancy: 08)
+UID:teletalk-job-14715@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261014
 DESCRIPTION:Organization: Magura District (DCMAGURA)\nPublished: 2026-09-15\nDeadline: 2026-10-14\nApplication URL:\nhttps://dcmagura.teletalk.com.bd/\n\nJob Primary ID: 14711
 SUMMARY:Office Assistant cum Computer Typist (Vacancy: 03)
 UID:teletalk-job-14711@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260918
+DESCRIPTION:Organization: Taxes Zone-2\, Chattogram.(CTAX2)\nPublished: 2026-08-27\nDeadline: 2026-09-18\nApplication URL:\nhttps://ctax2.teletalk.com.bd/\n\nJob Primary ID: 14619
+SUMMARY:Office Sohayok (Vacancy: 09)
+UID:teletalk-job-14619@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261005
@@ -111,6 +117,12 @@ SUMMARY:Office Assistant Cum Computer Typist (Vacancy: 08)
 UID:teletalk-job-14678@job2calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261010
+DESCRIPTION:Organization: Taxes Zone-16\, Dhaka(TAX16)\nPublished: 2026-09-19\nDeadline: 2026-10-10\nApplication URL:\nhttps://tax16.teletalk.com.bd/tax16_2026/\n\nJob Primary ID: 14744
+SUMMARY:Upper Division Assistant (Vacancy: 07)
+UID:teletalk-job-14744@job2calendar
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261007
 DESCRIPTION:Organization: Customs\, Excise and VAT Commissionerate\, Mymensingh(CEVMYM)\nPublished: 2026-09-17\nDeadline: 2026-10-07\nApplication URL:\nhttps://cevmym.teletalk.com.bd/\n\nJob Primary ID: 14739
 SUMMARY:Office Assistant- Cum- Computer Typist (Vacancy: 06)
@@ -141,10 +153,10 @@ SUMMARY:Office Assistant Cum Data Entry Operator (Vacancy: 04)
 UID:teletalk-job-14722@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260917
-DESCRIPTION:Organization: Office of the Superintendent of Police\, Kishoreganj(PKISP)\nPublished: 2026-08-20\nDeadline: 2026-09-17\nApplication URL:\nhttps://policekishoreganj.teletalk.com.bd/\n\nJob Primary ID: 14586
-SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 02)
-UID:teletalk-job-14586@job2calendar
+DTSTART;VALUE=DATE:20261010
+DESCRIPTION:Organization: Taxes Zone-16\, Dhaka(TAX16)\nPublished: 2026-09-19\nDeadline: 2026-10-10\nApplication URL:\nhttps://tax16.teletalk.com.bd/tax16_2026/\n\nJob Primary ID: 14747
+SUMMARY:Office Support Staff (Vacancy: 08)
+UID:teletalk-job-14747@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261006
