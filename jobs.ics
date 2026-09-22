@@ -57,16 +57,22 @@ SUMMARY:Upper Division Assistant (Vacancy: 05)
 UID:teletalk-job-14737@job2calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261014
+DESCRIPTION:Organization: Ministry of Labour and Employment(MOLE)\nPublished: 2026-09-24\nDeadline: 2026-10-14\nApplication URL:\nhttps://mole.teletalk.com.bd/\n\nJob Primary ID: 14784
+SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 03)
+UID:teletalk-job-14784@job2calendar
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261011
 DESCRIPTION:Organization: Bangladesh Agricultural Research Institute (BARI)\nPublished: 2026-09-21\nDeadline: 2026-10-11\nApplication URL:\nhttps://bari.teletalk.com.bd/\n\nJob Primary ID: 14758
 SUMMARY:Office Assistant (Vacancy: 02)
 UID:teletalk-job-14758@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261014
-DESCRIPTION:Organization: Ministry of Labour and Employment(MOLE)\nPublished: 2026-09-24\nDeadline: 2026-10-14\nApplication URL:\nhttps://mole.teletalk.com.bd/\n\nJob Primary ID: 14784
-SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 03)
-UID:teletalk-job-14784@job2calendar
+DTSTART;VALUE=DATE:20260927
+DESCRIPTION:Organization: Technical and Madrasah Education Division (TMED)\nPublished: 2026-08-31\nDeadline: 2026-09-27\nApplication URL:\nhttps://tmed.teletalk.com.bd/tmed_2026/\n\nJob Primary ID: 14633
+SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 06)
+UID:teletalk-job-14633@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261011
@@ -76,27 +82,21 @@ UID:teletalk-job-14780@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260927
-DESCRIPTION:Organization: Technical and Madrasah Education Division (TMED)\nPublished: 2026-08-31\nDeadline: 2026-09-27\nApplication URL:\nhttps://tmed.teletalk.com.bd/tmed_2026/\n\nJob Primary ID: 14633
-SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 06)
-UID:teletalk-job-14633@job2calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260927
 DESCRIPTION:Organization: Office of the Divisional  Commissioner\, Dhaka Division\, Dhaka(DHAKADIV)\nPublished: 2026-08-30\nDeadline: 2026-09-27\nApplication URL:\nhttps://dhakadiv.teletalk.com.bd/\n\nJob Primary ID: 14624
 SUMMARY:Office Support Staff (Vacancy: 06)
 UID:teletalk-job-14624@job2calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261006
-DESCRIPTION:Organization: Divisional Commissioner Office\, Mymensingh(MYMENSINGHDIV)\nPublished: 2026-09-15\nDeadline: 2026-10-06\nApplication URL:\nhttp://mymensinghdiv.teletalk.com.bd/\n\nJob Primary ID: 14715
-SUMMARY:Office Assistant cum Computer Typist (Vacancy: 08)
-UID:teletalk-job-14715@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261007
 DESCRIPTION:Organization: Customs\, Excise and VAT Commissionerate\, Mymensingh(CEVMYM)\nPublished: 2026-09-17\nDeadline: 2026-10-07\nApplication URL:\nhttps://cevmym.teletalk.com.bd/\n\nJob Primary ID: 14741
 SUMMARY:Office Support Staff (Vacancy: 07)
 UID:teletalk-job-14741@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261006
+DESCRIPTION:Organization: Divisional Commissioner Office\, Mymensingh(MYMENSINGHDIV)\nPublished: 2026-09-15\nDeadline: 2026-10-06\nApplication URL:\nhttp://mymensinghdiv.teletalk.com.bd/\n\nJob Primary ID: 14715
+SUMMARY:Office Assistant cum Computer Typist (Vacancy: 08)
+UID:teletalk-job-14715@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261014
