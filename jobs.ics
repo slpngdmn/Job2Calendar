@@ -21,10 +21,10 @@ SUMMARY:Store Keeper (Vacancy: 06)
 UID:teletalk-job-14760@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261011
-DESCRIPTION:Organization: Bangladesh Agricultural Research Institute (BARI)\nPublished: 2026-09-21\nDeadline: 2026-10-11\nApplication URL:\nhttps://bari.teletalk.com.bd/\n\nJob Primary ID: 14759
-SUMMARY:Store Keeper-Cum-Office Assistant (Vacancy: 04)
-UID:teletalk-job-14759@job2calendar
+DTSTART;VALUE=DATE:20261030
+DESCRIPTION:Organization: Civil Surgeon Office\, Narsingdi(CSNARSINGDI)\nPublished: 2026-09-30\nDeadline: 2026-10-30\nApplication URL:\nhttp://csnarsingdi.teletalk.com.bd/\n\nJob Primary ID: 14851
+SUMMARY:Office Assistant-cum-Computer Typist (Vacancy: 04)
+UID:teletalk-job-14851@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261014
@@ -33,16 +33,16 @@ SUMMARY:Office Support Staff (Vacancy: 08)
 UID:teletalk-job-14785@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261030
-DESCRIPTION:Organization: Civil Surgeon Office\, Narsingdi(CSNARSINGDI)\nPublished: 2026-09-30\nDeadline: 2026-10-30\nApplication URL:\nhttp://csnarsingdi.teletalk.com.bd/\n\nJob Primary ID: 14851
-SUMMARY:Office Assistant-cum-Computer Typist (Vacancy: 04)
-UID:teletalk-job-14851@job2calendar
+DTSTART;VALUE=DATE:20261011
+DESCRIPTION:Organization: Bangladesh Agricultural Research Institute (BARI)\nPublished: 2026-09-21\nDeadline: 2026-10-11\nApplication URL:\nhttps://bari.teletalk.com.bd/\n\nJob Primary ID: 14759
+SUMMARY:Store Keeper-Cum-Office Assistant (Vacancy: 04)
+UID:teletalk-job-14759@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261025
-DESCRIPTION:Organization: Rajshahi Development Authority( RDARAJSHAHI)\nPublished: 2026-09-24\nDeadline: 2026-10-25\nApplication URL:\nhttps://rdarajshahi.teletalk.com.bd/\n\nJob Primary ID: 14821
-SUMMARY:Office Assistant Cum Computer Typist (Vacancy: 02)
-UID:teletalk-job-14821@job2calendar
+DTSTART;VALUE=DATE:20261011
+DESCRIPTION:Organization: Deputy Commissioner's Office Naogaon (DCNAOGAON)\nPublished: 2026-09-21\nDeadline: 2026-10-11\nApplication URL:\nhttp://dcnaogaon.teletalk.com.bd/\n\nJob Primary ID: 14729
+SUMMARY:Office Support Staff (Vacancy: 10)
+UID:teletalk-job-14729@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261030
@@ -51,10 +51,10 @@ SUMMARY:Office Support Staff (Govt. Physical Education College) (Vacancy: 03)
 UID:teletalk-job-14876@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261011
-DESCRIPTION:Organization: Deputy Commissioner's Office Naogaon (DCNAOGAON)\nPublished: 2026-09-21\nDeadline: 2026-10-11\nApplication URL:\nhttp://dcnaogaon.teletalk.com.bd/\n\nJob Primary ID: 14729
-SUMMARY:Office Support Staff (Vacancy: 10)
-UID:teletalk-job-14729@job2calendar
+DTSTART;VALUE=DATE:20261025
+DESCRIPTION:Organization: Rajshahi Development Authority( RDARAJSHAHI)\nPublished: 2026-09-24\nDeadline: 2026-10-25\nApplication URL:\nhttps://rdarajshahi.teletalk.com.bd/\n\nJob Primary ID: 14821
+SUMMARY:Office Assistant Cum Computer Typist (Vacancy: 02)
+UID:teletalk-job-14821@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261030
@@ -99,10 +99,10 @@ SUMMARY:Upper Division Assistant (Vacancy: 05)
 UID:teletalk-job-14737@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261011
-DESCRIPTION:Organization: Bangladesh Agricultural Research Institute (BARI)\nPublished: 2026-09-21\nDeadline: 2026-10-11\nApplication URL:\nhttps://bari.teletalk.com.bd/\n\nJob Primary ID: 14758
-SUMMARY:Office Assistant (Vacancy: 02)
-UID:teletalk-job-14758@job2calendar
+DTSTART;VALUE=DATE:20261025
+DESCRIPTION:Organization: Tax Zone-4(TAX4)\nPublished: 2026-10-05\nDeadline: 2026-10-25\nApplication URL:\nhttps://tax4.teletalk.com.bd/\n\nJob Primary ID: 14884
+SUMMARY:Office Assistant-Cum-Computer Typist (Vacancy: 11)
+UID:teletalk-job-14884@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261014
@@ -111,10 +111,10 @@ SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 03)
 UID:teletalk-job-14784@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261030
-DESCRIPTION:Organization: Directorate of Sports\nPublished: 2026-10-01\nDeadline: 2026-10-30\nApplication URL:\nhttps://ds.teletalk.com.bd/\n\nJob Primary ID: 14875
-SUMMARY:Office Support Staff (Directorate of Sports & District Sports Office) (Vacancy: 26)
-UID:teletalk-job-14875@job2calendar
+DTSTART;VALUE=DATE:20261011
+DESCRIPTION:Organization: Bangladesh Agricultural Research Institute (BARI)\nPublished: 2026-09-21\nDeadline: 2026-10-11\nApplication URL:\nhttps://bari.teletalk.com.bd/\n\nJob Primary ID: 14758
+SUMMARY:Office Assistant (Vacancy: 02)
+UID:teletalk-job-14758@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261011
@@ -123,16 +123,16 @@ SUMMARY:Office Support Staff (Vacancy: 46)
 UID:teletalk-job-14780@job2calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261030
+DESCRIPTION:Organization: Directorate of Sports\nPublished: 2026-10-01\nDeadline: 2026-10-30\nApplication URL:\nhttps://ds.teletalk.com.bd/\n\nJob Primary ID: 14875
+SUMMARY:Office Support Staff (Directorate of Sports & District Sports Office) (Vacancy: 26)
+UID:teletalk-job-14875@job2calendar
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261018
 DESCRIPTION:Organization: Taxes Zone-2\, Dhaka (TAX2)\nPublished: 2026-09-28\nDeadline: 2026-10-18\nApplication URL:\nhttps://tax2.teletalk.com.bd/\n\nJob Primary ID: 14841
 SUMMARY:Office Assistant-Cum-Computer Typist (Vacancy: 03)
 UID:teletalk-job-14841@job2calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261006
-DESCRIPTION:Organization: Divisional Commissioner Office\, Mymensingh(MYMENSINGHDIV)\nPublished: 2026-09-15\nDeadline: 2026-10-06\nApplication URL:\nhttp://mymensinghdiv.teletalk.com.bd/\n\nJob Primary ID: 14715
-SUMMARY:Office Assistant cum Computer Typist (Vacancy: 08)
-UID:teletalk-job-14715@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261007
@@ -141,10 +141,10 @@ SUMMARY:Office Support Staff (Vacancy: 07)
 UID:teletalk-job-14741@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261014
-DESCRIPTION:Organization: Magura District (DCMAGURA)\nPublished: 2026-09-15\nDeadline: 2026-10-14\nApplication URL:\nhttps://dcmagura.teletalk.com.bd/\n\nJob Primary ID: 14711
-SUMMARY:Office Assistant cum Computer Typist (Vacancy: 03)
-UID:teletalk-job-14711@job2calendar
+DTSTART;VALUE=DATE:20261006
+DESCRIPTION:Organization: Divisional Commissioner Office\, Mymensingh(MYMENSINGHDIV)\nPublished: 2026-09-15\nDeadline: 2026-10-06\nApplication URL:\nhttp://mymensinghdiv.teletalk.com.bd/\n\nJob Primary ID: 14715
+SUMMARY:Office Assistant cum Computer Typist (Vacancy: 08)
+UID:teletalk-job-14715@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261017
@@ -153,10 +153,10 @@ SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 04)
 UID:teletalk-job-14832@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261027
-DESCRIPTION:Organization: Ministry of Shipping (MOS)\nPublished: 2026-09-28\nDeadline: 2026-10-27\nApplication URL:\nhttps://mos.teletalk.com.bd/\n\nJob Primary ID: 14817
-SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 12)
-UID:teletalk-job-14817@job2calendar
+DTSTART;VALUE=DATE:20261014
+DESCRIPTION:Organization: Magura District (DCMAGURA)\nPublished: 2026-09-15\nDeadline: 2026-10-14\nApplication URL:\nhttps://dcmagura.teletalk.com.bd/\n\nJob Primary ID: 14711
+SUMMARY:Office Assistant cum Computer Typist (Vacancy: 03)
+UID:teletalk-job-14711@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261005
@@ -171,16 +171,16 @@ SUMMARY:Office Assistant-Cum-Accountant (Vacancy: 08)
 UID:teletalk-job-14757@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261016
-DESCRIPTION:Organization: Microcredit Regulatory Authority (MRA)\nPublished: 2026-09-17\nDeadline: 2026-10-16\nApplication URL:\nhttps://mra.teletalk.com.bd/\n\nJob Primary ID: 14723
-SUMMARY:Data Entry Operator (Vacancy: 02)
-UID:teletalk-job-14723@job2calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261027
 DESCRIPTION:Organization: Ministry of Shipping (MOS)\nPublished: 2026-09-28\nDeadline: 2026-10-27\nApplication URL:\nhttps://mos.teletalk.com.bd/\n\nJob Primary ID: 14818
 SUMMARY:Office Shohayok (Vacancy: 18)
 UID:teletalk-job-14818@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261016
+DESCRIPTION:Organization: Microcredit Regulatory Authority (MRA)\nPublished: 2026-09-17\nDeadline: 2026-10-16\nApplication URL:\nhttps://mra.teletalk.com.bd/\n\nJob Primary ID: 14723
+SUMMARY:Data Entry Operator (Vacancy: 02)
+UID:teletalk-job-14723@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261020
@@ -213,16 +213,34 @@ SUMMARY:Office Assistant- Cum- Computer Typist (Vacancy: 06)
 UID:teletalk-job-14739@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261005
-DESCRIPTION:Organization: Bangladesh Ship Recycling Board(BSRB)\nPublished: 2026-09-10\nDeadline: 2026-10-05\nApplication URL:\nhttps://bsrb.teletalk.com.bd/\n\nJob Primary ID: 14705
-SUMMARY:Office Assistant cum-Computer Typist (Vacancy: 02)
-UID:teletalk-job-14705@job2calendar
+DTSTART;VALUE=DATE:20261025
+DESCRIPTION:Organization: Tax Zone-4(TAX4)\nPublished: 2026-10-05\nDeadline: 2026-10-25\nApplication URL:\nhttps://tax4.teletalk.com.bd/\n\nJob Primary ID: 14886
+SUMMARY:Office Support Staff (Vacancy: 10)
+UID:teletalk-job-14886@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261016
+DESCRIPTION:Organization: Microcredit Regulatory Authority (MRA)\nPublished: 2026-09-17\nDeadline: 2026-10-16\nApplication URL:\nhttps://mra.teletalk.com.bd/\n\nJob Primary ID: 14722
+SUMMARY:Office Assistant Cum Data Entry Operator (Vacancy: 04)
+UID:teletalk-job-14722@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261025
+DESCRIPTION:Organization: Tax Zone-4(TAX4)\nPublished: 2026-10-05\nDeadline: 2026-10-25\nApplication URL:\nhttps://tax4.teletalk.com.bd/\n\nJob Primary ID: 14882
+SUMMARY:Upper Division Assistant (Vacancy: 05)
+UID:teletalk-job-14882@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261030
 DESCRIPTION:Organization: Civil Surgeon Office\, Narsingdi(CSNARSINGDI)\nPublished: 2026-09-30\nDeadline: 2026-10-30\nApplication URL:\nhttp://csnarsingdi.teletalk.com.bd/\n\nJob Primary ID: 14852
 SUMMARY:Store Keeper (Vacancy: 05)
 UID:teletalk-job-14852@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261005
+DESCRIPTION:Organization: Bangladesh Ship Recycling Board(BSRB)\nPublished: 2026-09-10\nDeadline: 2026-10-05\nApplication URL:\nhttps://bsrb.teletalk.com.bd/\n\nJob Primary ID: 14705
+SUMMARY:Office Assistant cum-Computer Typist (Vacancy: 02)
+UID:teletalk-job-14705@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261011
@@ -237,10 +255,10 @@ SUMMARY:Office Assistant-cum-Computer Typist (District Sports Office) (Vacancy: 
 UID:teletalk-job-14873@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261016
-DESCRIPTION:Organization: Microcredit Regulatory Authority (MRA)\nPublished: 2026-09-17\nDeadline: 2026-10-16\nApplication URL:\nhttps://mra.teletalk.com.bd/\n\nJob Primary ID: 14722
-SUMMARY:Office Assistant Cum Data Entry Operator (Vacancy: 04)
-UID:teletalk-job-14722@job2calendar
+DTSTART;VALUE=DATE:20261027
+DESCRIPTION:Organization: Ministry of Shipping (MOS)\nPublished: 2026-09-28\nDeadline: 2026-10-27\nApplication URL:\nhttps://mos.teletalk.com.bd/\n\nJob Primary ID: 14817
+SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 12)
+UID:teletalk-job-14817@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261010
