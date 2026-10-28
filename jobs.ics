@@ -45,16 +45,22 @@ SUMMARY:Cashier (Govt. Physical Education College) (Vacancy: 02)
 UID:teletalk-job-14872@job2calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261028
+DESCRIPTION:Organization: Office of the Commissioner of Taxes Taxes Zone- Rangpur(TAXRAN)\nPublished: 2026-10-11\nDeadline: 2026-10-28\nApplication URL:\nhttps://taxran.teletalk.com.bd/\n\nJob Primary ID: 14897
+SUMMARY:Office Support Staff (Vacancy: 09)
+UID:teletalk-job-14897@job2calendar
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261105
 DESCRIPTION:Organization: Taxes Zone-3\, Chattogram(TZ3CTG)\nPublished: 2026-10-14\nDeadline: 2026-11-05\nApplication URL:\nhttps://tz3ctg.teletalk.com.bd/\n\nJob Primary ID: 14963
 SUMMARY:Office Assistant cum-Computer Typist (Vacancy: 11)
 UID:teletalk-job-14963@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261028
-DESCRIPTION:Organization: Office of the Commissioner of Taxes Taxes Zone- Rangpur(TAXRAN)\nPublished: 2026-10-11\nDeadline: 2026-10-28\nApplication URL:\nhttps://taxran.teletalk.com.bd/\n\nJob Primary ID: 14897
-SUMMARY:Office Support Staff (Vacancy: 09)
-UID:teletalk-job-14897@job2calendar
+DTSTART;VALUE=DATE:20261126
+DESCRIPTION:Organization: Department of National Savings(NSD)\nPublished: 2026-10-29\nDeadline: 2026-11-26\nApplication URL:\nhttps://nsd.teletalk.com.bd/\n\nJob Primary ID: 15066
+SUMMARY:Data Entry Operator (Vacancy: 02)
+UID:teletalk-job-15066@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261031
@@ -63,16 +69,22 @@ SUMMARY:Upper Division Assistant (Vacancy: 07)
 UID:teletalk-job-14907@job2calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261114
+DESCRIPTION:Organization: Taxes Zone-9\, Dhaka (TAX9)\nPublished: 2026-10-25\nDeadline: 2026-11-14\nApplication URL:\nhttps://tax9.teletalk.com.bd/\n\nJob Primary ID: 15036
+SUMMARY:Upper Division Assistant (Vacancy: 04)
+UID:teletalk-job-15036@job2calendar
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261028
 DESCRIPTION:Organization: Office of the Commissioner of Taxes Taxes Zone- Rangpur(TAXRAN)\nPublished: 2026-10-11\nDeadline: 2026-10-28\nApplication URL:\nhttps://taxran.teletalk.com.bd/\n\nJob Primary ID: 14893
 SUMMARY:Upper Division Assistant (Vacancy: 07)
 UID:teletalk-job-14893@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261114
-DESCRIPTION:Organization: Taxes Zone-9\, Dhaka (TAX9)\nPublished: 2026-10-25\nDeadline: 2026-11-14\nApplication URL:\nhttps://tax9.teletalk.com.bd/\n\nJob Primary ID: 15036
-SUMMARY:Upper Division Assistant (Vacancy: 04)
-UID:teletalk-job-15036@job2calendar
+DTSTART;VALUE=DATE:20261126
+DESCRIPTION:Organization: Department of National Savings(NSD)\nPublished: 2026-10-29\nDeadline: 2026-11-26\nApplication URL:\nhttps://nsd.teletalk.com.bd/\n\nJob Primary ID: 15062
+SUMMARY:Upper Division Assistant (Vacancy: 03)
+UID:teletalk-job-15062@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261117
@@ -81,16 +93,16 @@ SUMMARY:Office Assistant-Cum-Computer Typist (Vacancy: 10)
 UID:teletalk-job-15057@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261104
-DESCRIPTION:Organization: Withholding Tax Management Unit\, Dhaka(WTMU)\nPublished: 2026-10-15\nDeadline: 2026-11-04\nApplication URL:\nhttps://wtmu.teletalk.com.bd/wtmu_2026/\n\nJob Primary ID: 14975
-SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 05)
-UID:teletalk-job-14975@job2calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261101
 DESCRIPTION:Organization: Office of The Commissioner of Taxes Taxes Zone-3\, Dhaka(TAX3)\nPublished: 2026-10-12\nDeadline: 2026-11-01\nApplication URL:\nhttps://tax3.teletalk.com.bd/\n\nJob Primary ID: 14920
 SUMMARY:Office Support Staff (Vacancy: 10)
 UID:teletalk-job-14920@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261104
+DESCRIPTION:Organization: Withholding Tax Management Unit\, Dhaka(WTMU)\nPublished: 2026-10-15\nDeadline: 2026-11-04\nApplication URL:\nhttps://wtmu.teletalk.com.bd/wtmu_2026/\n\nJob Primary ID: 14975
+SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 05)
+UID:teletalk-job-14975@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261101
@@ -111,16 +123,16 @@ SUMMARY:Office Assistant-cum-Computer Typist (Vacancy: 08)
 UID:teletalk-job-14911@job2calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261126
+DESCRIPTION:Organization: Department of National Savings(NSD)\nPublished: 2026-10-29\nDeadline: 2026-11-26\nApplication URL:\nhttps://nsd.teletalk.com.bd/\n\nJob Primary ID: 15065
+SUMMARY:Office Assistant-cum-Computer Typist (Vacancy: 40)
+UID:teletalk-job-15065@job2calendar
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261105
 DESCRIPTION:Organization: TAXESZONE CUMILLA (TZC)\nPublished: 2026-10-13\nDeadline: 2026-11-05\nApplication URL:\nhttps://tzc.teletalk.com.bd/\n\nJob Primary ID: 14932
 SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 10)
 UID:teletalk-job-14932@job2calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261126
-DESCRIPTION:Organization: Deputy Commissioner Office\, Noakhali (DCNOAKHALI)\nPublished: 2026-10-26\nDeadline: 2026-11-26\nApplication URL:\nhttp://dcnoakhali.teletalk.com.bd/\n\nJob Primary ID: 15031
-SUMMARY:Office Support Staff (Vacancy: 11)
-UID:teletalk-job-15031@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261103
@@ -129,16 +141,16 @@ SUMMARY:Upper Division Assistant (Vacancy: 08)
 UID:teletalk-job-14957@job2calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261126
+DESCRIPTION:Organization: Deputy Commissioner Office\, Noakhali (DCNOAKHALI)\nPublished: 2026-10-26\nDeadline: 2026-11-26\nApplication URL:\nhttp://dcnoakhali.teletalk.com.bd/\n\nJob Primary ID: 15031
+SUMMARY:Office Support Staff (Vacancy: 11)
+UID:teletalk-job-15031@job2calendar
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261028
 DESCRIPTION:Organization: Office of Tax Commissioner Taxes Zone 13\, Dhaka(TAX13)\nPublished: 2026-10-13\nDeadline: 2026-10-28\nApplication URL:\nhttps://tax13.teletalk.com.bd/\n\nJob Primary ID: 14927
 SUMMARY:Office Support Staff (Vacancy: 08)
 UID:teletalk-job-14927@job2calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261028
-DESCRIPTION:Organization: Office of Tax Commissioner Taxes Zone 13\, Dhaka(TAX13)\nPublished: 2026-10-13\nDeadline: 2026-10-28\nApplication URL:\nhttps://tax13.teletalk.com.bd/\n\nJob Primary ID: 14923
-SUMMARY:Upper Division Assistant (Vacancy: 09)
-UID:teletalk-job-14923@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261104
@@ -147,16 +159,22 @@ SUMMARY:Office Assistant Cum Computer Typist (Vacancy: 09)
 UID:teletalk-job-14978@job2calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261028
+DESCRIPTION:Organization: Office of Tax Commissioner Taxes Zone 13\, Dhaka(TAX13)\nPublished: 2026-10-13\nDeadline: 2026-10-28\nApplication URL:\nhttps://tax13.teletalk.com.bd/\n\nJob Primary ID: 14923
+SUMMARY:Upper Division Assistant (Vacancy: 09)
+UID:teletalk-job-14923@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261103
+DESCRIPTION:Organization: Taxes Zone-21\, Dhaka(TAX21)\nPublished: 2026-10-14\nDeadline: 2026-11-03\nApplication URL:\nhttps://tax21.teletalk.com.bd/tax21_2026/\n\nJob Primary ID: 14959
+SUMMARY:Office Assistant-Cum-Computer Typist (Vacancy: 16)
+UID:teletalk-job-14959@job2calendar
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261115
 DESCRIPTION:Organization: Housing & Building Research Institute(HBRI)\nPublished: 2026-10-14\nDeadline: 2026-11-15\nApplication URL:\nhttp://hbri.teletalk.com.bd/\n\nJob Primary ID: 14970
 SUMMARY:Office Sohayok (Vacancy: 07)
 UID:teletalk-job-14970@job2calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261105
-DESCRIPTION:Organization: Taxes Zone-3\, Chattogram(TZ3CTG)\nPublished: 2026-10-14\nDeadline: 2026-11-05\nApplication URL:\nhttps://tz3ctg.teletalk.com.bd/\n\nJob Primary ID: 14965
-SUMMARY:Office Sohayok (Vacancy: 07)
-UID:teletalk-job-14965@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261031
@@ -165,10 +183,10 @@ SUMMARY:Office Support Staff (Vacancy: 12)
 UID:teletalk-job-14910@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261027
-DESCRIPTION:Organization: Ministry of Shipping (MOS)\nPublished: 2026-09-28\nDeadline: 2026-10-27\nApplication URL:\nhttps://mos.teletalk.com.bd/\n\nJob Primary ID: 14818
-SUMMARY:Office Shohayok (Vacancy: 18)
-UID:teletalk-job-14818@job2calendar
+DTSTART;VALUE=DATE:20261105
+DESCRIPTION:Organization: Taxes Zone-3\, Chattogram(TZ3CTG)\nPublished: 2026-10-14\nDeadline: 2026-11-05\nApplication URL:\nhttps://tz3ctg.teletalk.com.bd/\n\nJob Primary ID: 14965
+SUMMARY:Office Sohayok (Vacancy: 07)
+UID:teletalk-job-14965@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261031
@@ -195,6 +213,12 @@ SUMMARY:Office Assistant Cum- Computer Typist (Vacancy: 08)
 UID:teletalk-job-14895@job2calendar
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261117
+DESCRIPTION:Organization: Taxes Zone-Narayanganj(TAXNAR)\nPublished: 2026-10-28\nDeadline: 2026-11-17\nApplication URL:\nhttps://taxnar.teletalk.com.bd/\n\nJob Primary ID: 15059
+SUMMARY:Office Support Staff (Vacancy: 06)
+UID:teletalk-job-15059@job2calendar
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261114
 DESCRIPTION:Organization: Office of The Commissioner of Taxes Taxes Zone-6\, Dhaka(TAX6)\nPublished: 2026-10-25\nDeadline: 2026-11-14\nApplication URL:\nhttps://tax6.teletalk.com.bd/\n\nJob Primary ID: 15030
 SUMMARY:Office Support Staff (Vacancy: 09)
@@ -202,21 +226,9 @@ UID:teletalk-job-15030@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261117
-DESCRIPTION:Organization: Taxes Zone-Narayanganj(TAXNAR)\nPublished: 2026-10-28\nDeadline: 2026-11-17\nApplication URL:\nhttps://taxnar.teletalk.com.bd/\n\nJob Primary ID: 15059
-SUMMARY:Office Support Staff (Vacancy: 06)
-UID:teletalk-job-15059@job2calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261117
 DESCRIPTION:Organization: Taxes Zone-Narayanganj(TAXNAR)\nPublished: 2026-10-28\nDeadline: 2026-11-17\nApplication URL:\nhttps://taxnar.teletalk.com.bd/\n\nJob Primary ID: 15055
 SUMMARY:Upper Division Assistant (Vacancy: 05)
 UID:teletalk-job-15055@job2calendar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261105
-DESCRIPTION:Organization: TAXESZONE CUMILLA (TZC)\nPublished: 2026-10-13\nDeadline: 2026-11-05\nApplication URL:\nhttps://tzc.teletalk.com.bd/\n\nJob Primary ID: 14930
-SUMMARY:Upper Division Assistant (Vacancy: 05)
-UID:teletalk-job-14930@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261030
@@ -237,22 +249,22 @@ SUMMARY:Office Sohayok (Vacancy: 09)
 UID:teletalk-job-14913@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261030
-DESCRIPTION:Organization: Directorate of Sports\nPublished: 2026-10-01\nDeadline: 2026-10-30\nApplication URL:\nhttps://ds.teletalk.com.bd/\n\nJob Primary ID: 14873
-SUMMARY:Office Assistant-cum-Computer Typist (District Sports Office) (Vacancy: 09)
-UID:teletalk-job-14873@job2calendar
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261114
 DESCRIPTION:Organization: Taxes Zone-9\, Dhaka (TAX9)\nPublished: 2026-10-25\nDeadline: 2026-11-14\nApplication URL:\nhttps://tax9.teletalk.com.bd/\n\nJob Primary ID: 15042
 SUMMARY:Office Support Staff (Vacancy: 05)
 UID:teletalk-job-15042@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261027
-DESCRIPTION:Organization: Ministry of Shipping (MOS)\nPublished: 2026-09-28\nDeadline: 2026-10-27\nApplication URL:\nhttps://mos.teletalk.com.bd/\n\nJob Primary ID: 14817
-SUMMARY:Office Assistant Cum-Computer Typist (Vacancy: 12)
-UID:teletalk-job-14817@job2calendar
+DTSTART;VALUE=DATE:20261030
+DESCRIPTION:Organization: Directorate of Sports\nPublished: 2026-10-01\nDeadline: 2026-10-30\nApplication URL:\nhttps://ds.teletalk.com.bd/\n\nJob Primary ID: 14873
+SUMMARY:Office Assistant-cum-Computer Typist (District Sports Office) (Vacancy: 09)
+UID:teletalk-job-14873@job2calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261126
+DESCRIPTION:Organization: Department of National Savings(NSD)\nPublished: 2026-10-29\nDeadline: 2026-11-26\nApplication URL:\nhttps://nsd.teletalk.com.bd/\n\nJob Primary ID: 15067
+SUMMARY:Office Support Staff (Vacancy: 33)
+UID:teletalk-job-15067@job2calendar
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261105
@@ -267,9 +279,9 @@ SUMMARY:Office Support Staff (Vacancy: 09)
 UID:teletalk-job-14960@job2calendar
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261103
-DESCRIPTION:Organization: Taxes Zone-21\, Dhaka(TAX21)\nPublished: 2026-10-14\nDeadline: 2026-11-03\nApplication URL:\nhttps://tax21.teletalk.com.bd/tax21_2026/\n\nJob Primary ID: 14959
-SUMMARY:Office Assistant-Cum-Computer Typist (Vacancy: 16)
-UID:teletalk-job-14959@job2calendar
+DTSTART;VALUE=DATE:20261105
+DESCRIPTION:Organization: TAXESZONE CUMILLA (TZC)\nPublished: 2026-10-13\nDeadline: 2026-11-05\nApplication URL:\nhttps://tzc.teletalk.com.bd/\n\nJob Primary ID: 14930
+SUMMARY:Upper Division Assistant (Vacancy: 05)
+UID:teletalk-job-14930@job2calendar
 END:VEVENT
 END:VCALENDAR
