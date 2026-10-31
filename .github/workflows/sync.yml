@@ -2,8 +2,8 @@ name: Job2Calendar Sync
 
 on:
   schedule:
-    # Runs at 07:17 Bangladesh time (01:17 UTC) to avoid GitHub's server rush hour.
-    - cron: '17 1 * * *'
+  # Runs at 03:00 AM Bangladesh time (21:00 UTC).
+  - cron: '0 21 * * *'
   workflow_dispatch:
 
 jobs:
